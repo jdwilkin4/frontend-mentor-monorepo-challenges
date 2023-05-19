@@ -4,11 +4,13 @@
   "version": "1.0.0",
   "description": "This is the monorepo for my Frontend Mentor Projects",
   "workspaces": [
-    "workit-landing-page"
+    "workit-landing-page",
+    "results-summary-component"
   ],
   "main": "index.js",
   "scripts": {
-    "build:workit": "yarn workspace workit-landing-page build"
+    "build:workit": "yarn workspace workit-landing-page build",
+    "build:results-summary-component": "yarn workspace results-summary-component build"
   },
   "keywords": [
     "HTML",
