@@ -27,6 +27,5 @@
 node_modules
 
 # builds
-dist
 .cache
 .parcel-cache
