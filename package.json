@@ -1,0 +1,20 @@
+{
+  "name": "frontend-mentor-projects-monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "This is the monorepo for my Frontend Mentor Projects",
+  "workspaces": [
+    "workit-landing-page"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "build:workit": "yarn workspace workit-landing-page build"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
+  "author": "Jessica Wilkins",
+  "license": "ISC"
+}

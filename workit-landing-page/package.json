@@ -1,0 +1,19 @@
+{
+  "name": "workit-landing-page",
+  "version": "1.0.0",
+  "description": "This is a solution to the Workit landing page challenge on Frontend Mentor",
+  "source": "index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "keywords": [
+    "HTML",
+    "CSS"
+  ],
+  "author": "Jessica Wilkins",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  }
+}
