@@ -9,11 +9,14 @@
   },
   "keywords": [
     "HTML",
-    "CSS"
+    "SCSS"
   ],
   "author": "Jessica Wilkins",
   "license": "ISC",
   "devDependencies": {
     "parcel": "^2.8.3"
+  },
+  "dependencies": {
+    "sass": "^1.62.1"
   }
 }
