@@ -1,0 +1,219 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$very-light-blue: #ecf2ff;
+$light-blue: #cac9ff;
+$navy-blue: #303b59;
+$blue: #1125d6;
+$red: #ff5555;
+$yellow: #ffb21e;
+$green: #00bb8f;
+$white: #fff;
+
+body {
+  background-color: $very-light-blue;
+  font-family: "Hanken Grotesk", sans-serif;
+
+  main {
+    background: $white;
+    box-shadow: 0px 30px 60px rgba(61, 108, 236, 0.15);
+    border-radius: 32px;
+
+    .results-container {
+      background: linear-gradient(
+        180deg,
+        #7755ff 0%,
+        #6943ff 0.01%,
+        #2f2ce9 100%
+      );
+      box-shadow: 0px 30px 60px rgba(61, 108, 236, 0.15);
+      border-radius: 0px 0px 32px 32px;
+      text-align: center;
+
+      &__results-text {
+        color: $light-blue;
+        padding: 1.5rem 0;
+        font-weight: 700;
+        font-size: 1.125rem;
+        line-height: 23px;
+      }
+
+      &__results {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        background: linear-gradient(
+          180deg,
+          #4d21c9 0%,
+          rgba(37, 33, 201, 0) 100%,
+          rgba(37, 33, 201, 0) 100%
+        );
+        margin: auto;
+
+        &__final-score {
+          padding-top: 1.563rem;
+          color: $white;
+          font-weight: 800;
+          font-size: 3.5rem;
+          line-height: 72px;
+        }
+
+        &__total-possible-points {
+          padding-bottom: 1.375rem;
+          color: $light-blue;
+          font-weight: 700;
+          font-size: 1rem;
+          line-height: 21px;
+        }
+      }
+
+      &__summary {
+        padding-top: 1.5rem;
+        padding-bottom: 2.5rem;
+
+        &__results-adjective {
+          color: $white;
+          font-weight: 700;
+          font-size: 1.5rem;
+          line-height: 31px;
+        }
+
+        &__description {
+          margin-top: 0.5rem;
+          padding: 0 3.625rem;
+          color: $light-blue;
+          font-weight: 500;
+          font-size: 1rem;
+          line-height: 21px;
+        }
+      }
+    }
+
+    .summary-container {
+      padding: 1.5rem 1.875rem;
+      padding-bottom: 1.875rem;
+
+      &__heading {
+        color: $navy-blue;
+        font-weight: 700;
+        font-size: 1.125rem;
+        line-height: 23px;
+        margin-bottom: 1.5rem;
+      }
+
+      &__details-container {
+        border-radius: 12px;
+        padding: 1.063rem 1rem;
+        display: flex;
+        justify-content: space-between;
+
+        &__icon-and-heading-container {
+          display: flex;
+          gap: 12px;
+
+          &__subheading {
+            font-weight: 500;
+            font-size: 1rem;
+            line-height: 21px;
+          }
+        }
+
+        &__score-container {
+          color: $navy-blue;
+          font-size: 1rem;
+          line-height: 21px;
+          font-weight: 700;
+
+          &__total-points {
+            margin-left: 0.5rem;
+            opacity: 0.5;
+          }
+        }
+      }
+
+      &__details-container.reactions-container {
+        background: linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 0.95),
+            rgba(255, 255, 255, 0.95)
+          ),
+          #ff5555;
+
+        h3 {
+          color: $red;
+        }
+      }
+
+      &__details-container.memory-container {
+        margin: 1rem 0;
+
+        background: linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 0.95),
+            rgba(255, 255, 255, 0.95)
+          ),
+          #ffb21e;
+
+        h3 {
+          color: $yellow;
+        }
+      }
+
+      &__details-container.verbal-container {
+        margin: 1rem 0;
+
+        background: linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 0.95),
+            rgba(255, 255, 255, 0.95)
+          ),
+          #00bb8f;
+
+        h3 {
+          color: $green;
+        }
+      }
+
+      &__details-container.visual-container {
+        background: linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 0.95),
+            rgba(255, 255, 255, 0.95)
+          ),
+          #1125d6;
+
+        h3 {
+          color: $blue;
+        }
+      }
+
+      &__btn {
+        border-radius: 128px;
+        border: none;
+        background-color: $navy-blue;
+        color: $white;
+        font-weight: 700;
+        font-size: 1.125rem;
+        line-height: 23px;
+        width: 100%;
+        margin-top: 1.5rem;
+        padding: 1.063rem 0;
+        cursor: pointer;
+      }
+
+      &__btn:hover {
+        background: linear-gradient(
+          180deg,
+          #7755ff 0%,
+          #6943ff 0.01%,
+          #2f2ce9 100%
+        );
+      }
+    }
+  }
+}

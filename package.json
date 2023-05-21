@@ -18,5 +18,8 @@
     "JavaScript"
   ],
   "author": "Jessica Wilkins",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.8.3"
+  }
 }

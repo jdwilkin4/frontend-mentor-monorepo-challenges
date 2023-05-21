@@ -16,15 +16,23 @@
     />
 
     <title>Frontend Mentor | Results summary component</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.scss" />
   </head>
   <body>
     <main>
       <div class="results-container">
         <p class="results-container__results-text">Your Result</p>
         <div class="results-container__results">
-          <p class="results-container__results__final-number">76</p>
-          <p class="results-container__results__light-colored-text">of 100</p>
+          <p class="results-container__results__final-score">76</p>
+          <p class="results-container__results__total-possible-points">
+            of 100
+          </p>
         </div>
         <div class="results-container__summary">
           <p class="results-container__summary__results-adjective">Great</p>
@@ -36,7 +44,7 @@
       <div class="summary-container">
         <h2 class="summary-container__heading">Summary</h2>
 
-        <div class="summary-container__details-container">
+        <div class="summary-container__details-container reactions-container">
           <div
             class="summary-container__details-container__icon-and-heading-container"
           >
@@ -63,7 +71,7 @@
             >
           </div>
         </div>
-        <div class="summary-container__details-container">
+        <div class="summary-container__details-container memory-container">
           <div
             class="summary-container__details-container__icon-and-heading-container"
           >
@@ -90,7 +98,7 @@
             >
           </div>
         </div>
-        <div class="summary-container__details-container">
+        <div class="summary-container__details-container verbal-container">
           <div
             class="summary-container__details-container__icon-and-heading-container"
           >
@@ -117,7 +125,7 @@
             >
           </div>
         </div>
-        <div class="summary-container__details-container">
+        <div class="summary-container__details-container visual-container">
           <div
             class="summary-container__details-container__icon-and-heading-container"
           >
@@ -144,8 +152,9 @@
             >
           </div>
         </div>
+
+        <button class="summary-container__btn" type="button">Continue</button>
       </div>
-      <button class="btn" type="button">Continue</button>
     </main>
   </body>
 </html>
