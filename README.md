@@ -8,7 +8,7 @@ This is a monorepo that houses all of my Frontend Mentor solutions
 2. `cd` into the directory you are interested in (Ex. `cd results-summary-component/`)
 3. Run `yarn start`
 
-## Results Summary Component(WIP)
+## Results Summary Component
 
 [Live Site](https://jw-results-summary-component-solution.netlify.app/)
 [Link to code](https://github.com/jdwilkin4/frontend-mentor-monorepo-challenges/tree/main/results-summary-component)
