@@ -5,3 +5,90 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+$dark-purple: #24053e;
+$dark-grey: #584d62;
+$white: #ffffff;
+$ghost-white: #fcf8ff;
+$light-green: #44ffa1;
+
+@font-face {
+  font-family: "Fraunces_144pt-SemiBold";
+  src: url("./assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf");
+}
+
+.workit-landing {
+  font-family: "Manrope", sans-serif;
+
+  .cta-link {
+    background-color: $light-green;
+    color: $dark-purple;
+    font-weight: 700;
+    padding: 0.688rem 1.438rem;
+  }
+
+  .cta-link:hover {
+    background-color: transparent;
+    color: $light-green;
+    border: 2px solid $light-green;
+    cursor: pointer;
+  }
+
+  &__hero-section {
+    background-color: $dark-purple;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    border-radius: 0 0 50% 50% / 50px;
+
+    nav {
+      padding-top: 2rem;
+      padding-bottom: 4rem;
+
+      ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        li {
+          list-style-type: none;
+
+          .hero-cta-link {
+            color: $white;
+            font-weight: 700;
+            line-height: 32px;
+            letter-spacing: -0.16px;
+            text-decoration: none;
+            border-bottom: 3px solid $light-green;
+          }
+
+          .hero-cta-link:hover {
+            color: $light-green;
+          }
+        }
+      }
+    }
+
+    &__tag-line {
+      font-family: "Fraunces_144pt-SemiBold", serif;
+      color: $white;
+      font-size: 3.125rem;
+      text-align: center;
+      margin-bottom: 3.188rem;
+
+      &__underlined-text {
+        border-bottom: 3px solid $light-green;
+      }
+    }
+
+    &__mobile-phone {
+      width: 320px;
+      margin-top: 64px;
+      margin-bottom: -70px;
+    }
+  }
+
+  &__main {
+    margin-top: 9.688rem;
+  }
+}
