@@ -134,7 +134,7 @@ $light-green: #44ffa1;
           color: $dark-grey;
           font-weight: 400;
           line-height: 28px;
-          margin-top: 1rem;
+          margin: 1rem;
         }
       }
 
@@ -149,6 +149,63 @@ $light-green: #44ffa1;
       background-color: $ghost-white;
       border-radius: 30%;
       margin-top: -60px;
+    }
+
+    &__founder-info {
+      &__avatar {
+        width: 281px;
+        height: 281px;
+        display: block;
+        margin: auto;
+        margin-top: 6.25rem;
+      }
+
+      &__text-container {
+        background-color: $dark-purple;
+        color: $white;
+        margin: -3rem 1rem 4.625rem;
+        z-index: 10;
+        position: relative;
+        padding: 1.938rem;
+        text-align: center;
+
+        &__subheading {
+          font-size: 2rem;
+          font-family: "Fraunces 144pt";
+          font-weight: 600;
+        }
+
+        &__description {
+          margin-top: 1rem;
+          margin-bottom: 1.5rem;
+          line-height: 28px;
+        }
+
+        &__cta-link {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  &__footer {
+    &__workit-logo img {
+      margin: auto;
+      margin-bottom: 3.563rem;
+      display: block;
+    }
+
+    &__social-media-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      padding-left: 8.125rem;
+      padding-right: 8.125rem;
+      margin-bottom: 3.938rem;
+
+      a svg:hover path {
+        fill: $dark-purple;
+      }
     }
   }
 }
