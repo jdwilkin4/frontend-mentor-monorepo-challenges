@@ -274,13 +274,13 @@ $light-green: #44ffa1;
     &__social-media-links {
       display: flex;
       align-items: center;
+      justify-content: center;
       gap: 28px;
       padding-left: 8.125rem;
       padding-right: 8.125rem;
       margin-bottom: 3.938rem;
 
       @media (min-width: 48em) {
-        justify-content: center;
       }
 
       a svg:hover path {
