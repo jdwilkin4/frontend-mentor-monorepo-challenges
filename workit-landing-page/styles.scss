@@ -249,6 +249,17 @@ $light-green: #44ffa1;
         &__cta-link {
           text-decoration: none;
         }
+
+        &__bg-pattern3 {
+          display: none;
+
+          @media (min-width: 48em) {
+            display: block;
+            position: absolute;
+            top: 15.625rem;
+            right: 2rem;
+          }
+        }
       }
     }
   }
