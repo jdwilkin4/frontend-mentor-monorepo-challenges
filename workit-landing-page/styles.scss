@@ -37,6 +37,7 @@ $light-green: #44ffa1;
 
   &__hero-section {
     text-align: center;
+    position: relative;
 
     &__text-container {
       background-color: $dark-purple;
@@ -79,6 +80,13 @@ $light-green: #44ffa1;
         text-align: center;
         margin-bottom: 3.188rem;
 
+        @media (min-width: 48em) {
+          font-size: 3.75rem;
+          width: 573px;
+          margin: auto;
+          margin-bottom: 2.438rem;
+        }
+
         &__underlined-text {
           border-bottom: 3px solid $light-green;
         }
@@ -97,12 +105,43 @@ $light-green: #44ffa1;
         width: 80%;
       }
     }
+
+    &__bg-pattern {
+      display: none;
+
+      @media (min-width: 48em) {
+        display: block;
+        position: absolute;
+        top: 4.375rem;
+        left: -14rem;
+      }
+    }
+
+    &__bg-pattern2 {
+      display: none;
+
+      @media (min-width: 48em) {
+        display: block;
+        position: absolute;
+        top: 15.625rem;
+        right: -5rem;
+      }
+    }
   }
 
   &__main {
     &__company-insights {
       background-color: $ghost-white;
       overflow: hidden;
+
+      @media (min-width: 48em) {
+        padding: 0 6.063rem;
+
+        li {
+          display: flex;
+          gap: 32px;
+        }
+      }
 
       &__step-number {
         border: 1px solid $dark-grey;
@@ -123,11 +162,19 @@ $light-green: #44ffa1;
         margin-top: 1.5rem;
         margin-bottom: 2.5rem;
 
+        @media (min-width: 48em) {
+          text-align: start;
+        }
+
         &__title {
           font-family: "Fraunces_144pt-SemiBold", serif;
           font-weight: 600;
           font-size: 1.75rem;
           line-height: 36px;
+
+          @media (min-width: 48em) {
+            margin-left: 1rem;
+          }
         }
 
         &__description {
@@ -158,6 +205,11 @@ $light-green: #44ffa1;
         display: block;
         margin: auto;
         margin-top: 6.25rem;
+
+        @media (min-width: 48em) {
+          margin-top: 6.25rem;
+          margin-left: 2.438rem;
+        }
       }
 
       &__text-container {
@@ -169,10 +221,23 @@ $light-green: #44ffa1;
         padding: 1.938rem;
         text-align: center;
 
+        @media (min-width: 48em) {
+          width: 514px;
+          margin-left: 13.375rem;
+          margin-top: -8.5rem;
+          text-align: left;
+          padding: 3.5rem;
+          padding-top: 3rem;
+        }
+
         &__subheading {
           font-size: 2rem;
           font-family: "Fraunces 144pt";
           font-weight: 600;
+
+          @media (min-width: 48em) {
+            font-size: 3rem;
+          }
         }
 
         &__description {
@@ -202,6 +267,10 @@ $light-green: #44ffa1;
       padding-left: 8.125rem;
       padding-right: 8.125rem;
       margin-bottom: 3.938rem;
+
+      @media (min-width: 48em) {
+        justify-content: center;
+      }
 
       a svg:hover path {
         fill: $dark-purple;
