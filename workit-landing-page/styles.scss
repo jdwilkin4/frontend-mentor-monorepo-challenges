@@ -87,6 +87,10 @@ $light-green: #44ffa1;
           margin-bottom: 2.438rem;
         }
 
+        @media (min-width: 90em) {
+          font-size: 5rem;
+        }
+
         &__underlined-text {
           border-bottom: 3px solid $light-green;
         }
@@ -103,6 +107,11 @@ $light-green: #44ffa1;
 
       &__mobile-phone {
         width: 80%;
+        margin-bottom: 5.625rem;
+
+        @media (min-width: 90em) {
+          width: 767px;
+        }
       }
     }
 
@@ -114,6 +123,10 @@ $light-green: #44ffa1;
         position: absolute;
         top: 4.375rem;
         left: -14rem;
+      }
+
+      @media (min-width: 90em) {
+        left: -10rem;
       }
     }
 
@@ -134,12 +147,20 @@ $light-green: #44ffa1;
       background-color: $ghost-white;
       overflow: hidden;
 
+      @media (min-width: 90em) {
+        display: flex;
+      }
+
       @media (min-width: 48em) {
         padding: 0 6.063rem;
 
         li {
           display: flex;
           gap: 32px;
+
+          @media (min-width: 90em) {
+            display: block;
+          }
         }
       }
 
@@ -164,6 +185,10 @@ $light-green: #44ffa1;
 
         @media (min-width: 48em) {
           text-align: start;
+        }
+
+        @media (min-width: 90em) {
+          text-align: center;
         }
 
         &__title {
@@ -210,6 +235,12 @@ $light-green: #44ffa1;
           margin-top: 6.25rem;
           margin-left: 2.438rem;
         }
+
+        @media (min-width: 90em) {
+          width: 477px;
+          height: 477px;
+          margin-left: 10.188rem;
+        }
       }
 
       &__text-container {
@@ -230,6 +261,12 @@ $light-green: #44ffa1;
           padding-top: 3rem;
         }
 
+        @media (min-width: 90em) {
+          width: 730px;
+          margin-top: -18.5rem;
+          margin-left: 34.063rem;
+        }
+
         &__subheading {
           font-size: 2rem;
           font-family: "Fraunces 144pt";
@@ -238,12 +275,21 @@ $light-green: #44ffa1;
           @media (min-width: 48em) {
             font-size: 3rem;
           }
+
+          @media (min-width: 90em) {
+            font-size: 3.5rem;
+          }
         }
 
         &__description {
           margin-top: 1rem;
           margin-bottom: 1.5rem;
           line-height: 28px;
+
+          @media (min-width: 90em) {
+            font-size: 1.125rem;
+            line-height: 32px;
+          }
         }
 
         &__cta-link {
@@ -258,6 +304,10 @@ $light-green: #44ffa1;
             position: absolute;
             top: 15.625rem;
             right: 2rem;
+          }
+
+          @media (min-width: 90em) {
+            top: 12rem;
           }
         }
       }
@@ -279,9 +329,6 @@ $light-green: #44ffa1;
       padding-left: 8.125rem;
       padding-right: 8.125rem;
       margin-bottom: 3.938rem;
-
-      @media (min-width: 48em) {
-      }
 
       a svg:hover path {
         fill: $dark-purple;
