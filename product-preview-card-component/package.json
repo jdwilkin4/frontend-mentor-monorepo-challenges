@@ -1,0 +1,22 @@
+{
+  "name": "product-preview-card-component",
+  "version": "1.0.0",
+  "description": "This is a solution to the product preview card component",
+  "source": "index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "keywords": [
+    "HTML",
+    "SCSS"
+  ],
+  "author": "Jessica Wilkins",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.63.3"
+  },
+  "devDependencies": {
+    "parcel": "^2.9.2"
+  }
+}
