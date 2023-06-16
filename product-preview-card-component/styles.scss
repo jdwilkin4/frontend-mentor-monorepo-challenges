@@ -7,7 +7,107 @@
 }
 
 $dark-cyan: hsl(158, 36%, 37%);
+$dark-green: #1a4032;
 $cream: hsl(30, 38%, 92%);
 $very-dark-blue: hsl(212, 21%, 14%);
 $dark-grayish-blue: hsl(228, 12%, 48%);
 $white: hsl(0, 0%, 100%);
+
+body {
+  background-color: $cream;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+
+  @media (min-width: 90em) {
+    min-height: 100vh;
+  }
+
+  .product-card {
+    width: 343px;
+    background-color: $white;
+    border-radius: 10px;
+    margin-top: 1.75rem;
+
+    &__card-img {
+      width: 343px;
+      border-radius: 10px 10px 0px 0px;
+    }
+
+    &__card-info {
+      padding: 0 1.5rem;
+
+      &__tagline {
+        display: inline-block;
+        color: $dark-grayish-blue;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        line-height: 15px;
+        letter-spacing: 5px;
+        margin-top: 1.5rem;
+        margin-bottom: 0.75rem;
+      }
+
+      &__title {
+        font-family: "Fraunces", serif;
+        color: $very-dark-blue;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 32px;
+      }
+
+      &__description {
+        font-size: 0.875rem;
+        line-height: 23px;
+        color: $dark-grayish-blue;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+      }
+
+      &__price-container {
+        display: flex;
+        align-items: center;
+        gap: 19px;
+
+        &__sale-price {
+          color: $dark-cyan;
+          font-family: "Fraunces", serif;
+          font-weight: 700;
+          font-size: 2rem;
+        }
+
+        &__regular-price {
+          color: $dark-grayish-blue;
+          text-decoration: line-through;
+          font-size: 0.813rem;
+        }
+      }
+
+      &__cart-btn {
+        background-color: $dark-cyan;
+        color: $white;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 0.938rem 5.75rem;
+        margin-top: 1.25rem;
+        margin-bottom: 1.5rem;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $dark-green;
+        }
+
+        span {
+          font-size: 0.875rem;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
