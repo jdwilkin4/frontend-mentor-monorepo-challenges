@@ -32,9 +32,20 @@ body {
     border-radius: 10px;
     margin-top: 1.75rem;
 
+    @media (min-width: 90em) {
+      width: 600px;
+      height: 450px;
+      display: flex;
+    }
+
     &__card-img {
       width: 343px;
       border-radius: 10px 10px 0px 0px;
+
+      @media (min-width: 90em) {
+        width: 300px;
+        border-radius: 10px 0px 0px 10px;
+      }
     }
 
     &__card-info {
@@ -49,6 +60,11 @@ body {
         letter-spacing: 5px;
         margin-top: 1.5rem;
         margin-bottom: 0.75rem;
+
+        @media (min-width: 90em) {
+          margin-top: 2rem;
+          margin-bottom: 1.25rem;
+        }
       }
 
       &__title {
@@ -98,6 +114,12 @@ body {
         border: none;
         border-radius: 8px;
         cursor: pointer;
+
+        @media (min-width: 90em) {
+          padding: 0.938rem 3.938rem;
+          margin-top: 1.875rem;
+          margin-bottom: 2rem;
+        }
 
         &:hover {
           background-color: $dark-green;
