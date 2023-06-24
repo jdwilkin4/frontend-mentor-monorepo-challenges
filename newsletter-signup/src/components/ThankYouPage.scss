@@ -1,0 +1,36 @@
+@import "../_colors.scss";
+
+.thank-you-page-container {
+  background-color: $white;
+  color: $navy;
+  width: 100%;
+  padding: 9.313rem 1.5rem 2.5rem;
+
+  @media (min-width: 48em) {
+    border-radius: 36px;
+    width: 504px;
+    padding: 4rem;
+    padding-top: 3rem;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 100%;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+
+    @media (min-width: 48em) {
+      font-size: 3.5rem;
+    }
+  }
+
+  &__description {
+    line-height: 150%;
+    margin-bottom: 16.438rem;
+
+    @media (min-width: 48em) {
+      margin-bottom: 2.5rem;
+    }
+  }
+}

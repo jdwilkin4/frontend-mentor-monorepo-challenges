@@ -1,3 +1,5 @@
+import "./Button.scss";
+
 type Props = {
   text: string;
   buttonType: "submit" | "button";

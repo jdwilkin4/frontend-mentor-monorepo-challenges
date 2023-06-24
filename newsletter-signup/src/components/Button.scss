@@ -1,0 +1,24 @@
+@import "../_colors.scss";
+
+.btn {
+  background-color: $navy;
+  color: $white;
+  font-weight: 700;
+  line-height: 150%;
+  border: none;
+  border-radius: 8px;
+  padding: 1.125rem 6.188rem 0.875rem 6.313rem;
+  cursor: pointer;
+
+  @media (min-width: 48em) {
+    width: 376px;
+  }
+
+  &:hover {
+    background: var(
+      --gradient-1,
+      linear-gradient(225deg, #ff6a3a 0%, #ff527b 100%)
+    );
+    box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.5);
+  }
+}
