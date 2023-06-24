@@ -1,4 +1,5 @@
 import Button from "./Button";
+import "./NewsletterContainer.scss";
 
 const NewsletterContainer = () => {
   return (

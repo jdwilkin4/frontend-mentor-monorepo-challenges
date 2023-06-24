@@ -4,12 +4,13 @@ import ThankYouPage from "./components/ThankYouPage";
 import "./App.scss";
 
 function App() {
-  const [showThankYouPage, setShowThankYouPage] = useState<boolean>(true);
+  const [isThankYouPageShowing, setIsThankYouPageShowing] =
+    useState<boolean>(false);
   const [userEmail, setUserEmail] = useState<string>("ash@loremcompany.com");
 
   return (
     <div className="container">
-      {showThankYouPage ? (
+      {isThankYouPageShowing ? (
         <ThankYouPage userEmail={userEmail} />
       ) : (
         <NewsletterContainer />
