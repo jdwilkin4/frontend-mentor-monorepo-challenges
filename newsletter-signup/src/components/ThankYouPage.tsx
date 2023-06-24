@@ -1,3 +1,6 @@
+import "./ThankYouPage.scss";
+import Button from "./Button";
+
 const ThankYouPage = () => {
   return (
     <div className="thank-you-page-container">
@@ -13,9 +16,7 @@ const ThankYouPage = () => {
         A confirmation email has been sent to ash@loremcompany.com. Please open
         it and click the button inside to confirm your subscription.
       </p>
-      <button className="btn" type="button">
-        Dismiss message
-      </button>
+      <Button text="Dismiss message" buttonType="button" />
     </div>
   );
 };

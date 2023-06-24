@@ -1,3 +1,5 @@
+import Button from "./Button";
+
 const NewsletterContainer = () => {
   return (
     <div className="newsletter-container">
@@ -21,9 +23,7 @@ const NewsletterContainer = () => {
             id="signup"
             placeholder="email@company.com"
           />
-          <button className="btn" type="submit">
-            Subscribe to monthly newsletter
-          </button>
+          <Button text=" Subscribe to monthly newsletter" buttonType="submit" />
         </form>
       </div>
       <div className="newsletter-container__img-container">
