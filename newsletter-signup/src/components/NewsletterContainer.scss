@@ -9,6 +9,7 @@
   &__signup {
     padding-left: 1rem;
     padding-right: 1rem;
+    padding-bottom: 2.5rem;
 
     &__title {
       margin-top: 2.5rem;
@@ -29,7 +30,7 @@
         list-style: none;
         background: url("./src/assets/images/icon-list.svg") left center
           no-repeat;
-        padding-left: 1.5rem;
+        padding-left: 2.5rem;
       }
 
       li:nth-child(2) {
