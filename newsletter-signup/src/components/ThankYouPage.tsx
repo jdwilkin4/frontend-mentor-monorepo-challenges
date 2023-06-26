@@ -3,9 +3,10 @@ import Button from "./Button";
 
 type Props = {
   userEmail: string;
+  returnToMainPage: () => void;
 };
 
-const ThankYouPage = ({ userEmail }: Props) => {
+const ThankYouPage = ({ userEmail, returnToMainPage }: Props) => {
   return (
     <div className="thank-you-page-container">
       <img
@@ -21,7 +22,11 @@ const ThankYouPage = ({ userEmail }: Props) => {
         Please open it and click the button inside to confirm your subscription.
       </p>
       <div className="thank-you-page-container__dismiss-btn-container">
-        <Button text="Dismiss message" buttonType="button" />
+        <Button
+          handleClick={returnToMainPage}
+          text="Dismiss message"
+          buttonType="button"
+        />
       </div>
     </div>
   );

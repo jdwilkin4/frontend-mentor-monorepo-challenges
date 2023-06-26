@@ -3,11 +3,12 @@ import "./Button.scss";
 type Props = {
   text: string;
   buttonType: "submit" | "button";
+  handleClick?: () => void;
 };
 
-const Button = ({ text, buttonType }: Props) => {
+const Button = ({ text, buttonType, handleClick }: Props) => {
   return (
-    <button className="btn" type={buttonType}>
+    <button onClick={handleClick} className="btn" type={buttonType}>
       {text}
     </button>
   );

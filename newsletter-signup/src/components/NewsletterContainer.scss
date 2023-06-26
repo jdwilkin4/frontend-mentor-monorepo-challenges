@@ -66,7 +66,8 @@
       }
     }
 
-    &__input {
+    &__input,
+    &__input--invalid {
       display: block;
       width: 100%;
       border-radius: 8px;
@@ -74,10 +75,21 @@
       padding: 1rem 9.313rem 1rem 1.5rem;
       margin-top: 0.5rem;
       margin-bottom: 1.5rem;
+      background: transparent;
 
       &::placeholder {
         opacity: 0.5;
       }
+    }
+
+    input:focus {
+      border: 1px solid $navy;
+      background-color: $white;
+    }
+
+    &__input--invalid {
+      border: 1px solid $red;
+      background-color: $dark-red !important;
     }
   }
 }

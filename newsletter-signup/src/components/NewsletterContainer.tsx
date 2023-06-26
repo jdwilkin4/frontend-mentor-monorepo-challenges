@@ -1,7 +1,23 @@
+import { ChangeEvent } from "react";
 import Button from "./Button";
+import clsx from "clsx";
 import "./NewsletterContainer.scss";
 
-const NewsletterContainer = () => {
+type InputEvent = ChangeEvent<HTMLInputElement>;
+
+type NewsletterContainerProps = {
+  userEmail: string;
+  setUserEmail: (userEmail: string) => void;
+  handleSubmit: (e: any) => void;
+  isEmailInvalid: boolean;
+};
+
+const NewsletterContainer = ({
+  userEmail,
+  setUserEmail,
+  handleSubmit,
+  isEmailInvalid,
+}: NewsletterContainerProps) => {
   return (
     <div className="newsletter-container">
       <div className="newsletter-container__signup">
@@ -14,17 +30,22 @@ const NewsletterContainer = () => {
           <li>Measuring to ensure updates are a success</li>
           <li>And much more!</li>
         </ul>
-        <form action="">
+        <form onSubmit={handleSubmit}>
           <label htmlFor="signup">Email address</label>
           <input
-            className="newsletter-container__signup__input"
+            value={userEmail}
+            className={clsx({
+              "newsletter-container__signup__input--invalid": isEmailInvalid,
+              "newsletter-container__signup__input": !isEmailInvalid,
+            })}
             required
             type="email"
             name="email-signup"
             id="signup"
             placeholder="email@company.com"
+            onChange={(e: InputEvent) => setUserEmail(e.target.value)}
           />
-          <Button text=" Subscribe to monthly newsletter" buttonType="submit" />
+          <Button text="Subscribe to monthly newsletter" buttonType="submit" />
         </form>
       </div>
       <div className="newsletter-container__img-container">
