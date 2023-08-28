@@ -17,6 +17,7 @@ function App() {
       setIsEmailInvalid(true);
       return;
     } else {
+      setIsEmailInvalid(false);
       setIsThankYouPageShowing(true);
     }
   };

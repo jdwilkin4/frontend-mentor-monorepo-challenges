@@ -89,7 +89,20 @@
 
     &__input--invalid {
       border: 1px solid $red;
-      background-color: $dark-red !important;
+      color: $red;
+      background-color: $dark-red;
+    }
+
+    &__message-div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &__invalid-msg {
+        color: $red;
+        font-weight: 700;
+        font-size: 0.75rem;
+      }
     }
   }
 }

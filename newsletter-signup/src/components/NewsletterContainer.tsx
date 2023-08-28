@@ -31,7 +31,14 @@ const NewsletterContainer = ({
           <li>And much more!</li>
         </ul>
         <form onSubmit={handleSubmit}>
-          <label htmlFor="signup">Email address</label>
+          <div className="newsletter-container__signup__message-div">
+            <label htmlFor="signup">Email address</label>
+            {isEmailInvalid && (
+              <p className="newsletter-container__signup__message-div__invalid-msg">
+                Valid email required
+              </p>
+            )}
+          </div>
           <input
             value={userEmail}
             className={clsx({
@@ -39,7 +46,6 @@ const NewsletterContainer = ({
               "newsletter-container__signup__input": !isEmailInvalid,
             })}
             required
-            type="email"
             name="email-signup"
             id="signup"
             placeholder="email@company.com"
