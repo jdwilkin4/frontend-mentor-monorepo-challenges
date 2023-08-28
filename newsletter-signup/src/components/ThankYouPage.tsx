@@ -11,7 +11,7 @@ const ThankYouPage = ({ userEmail, returnToMainPage }: Props) => {
     <div className="thank-you-page-container">
       <img
         className="thank-you-page-container__success-icon"
-        src="./src/assets/images/icon-success.svg"
+        src="./icon-success.svg"
         alt="success icon"
       />
       <h1 className="thank-you-page-container__title">
