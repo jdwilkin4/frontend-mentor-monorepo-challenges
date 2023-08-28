@@ -58,12 +58,12 @@ const NewsletterContainer = ({
         <picture>
           <source
             className="newsletter-container__img-container__desktop-img"
-            srcSet="./src/assets/images/illustration-sign-up-desktop.svg"
+            srcSet="./illustration-sign-up-desktop.svg"
             media="(min-width: 768px)"
           />
           <img
             className="newsletter-container__img-container__mobile-img"
-            src="./src/assets/images/illustration-sign-up-mobile.svg"
+            src="./illustration-sign-up-mobile.svg"
             alt="newsletter illustration"
           />
         </picture>
