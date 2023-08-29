@@ -15,8 +15,8 @@
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Live site](https://classy-druid-be5091.netlify.app/)
+- [GitHub repo](https://github.com/jdwilkin4/frontend-mentor-monorepo-challenges/tree/main/qr-code-component-main)
 
 ## My process
 

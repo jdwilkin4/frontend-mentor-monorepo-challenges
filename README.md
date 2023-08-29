@@ -27,3 +27,8 @@ This is a monorepo that houses all of my Frontend Mentor solutions
 
 [Live site](https://newsletter-signup-project.netlify.app/)<br>
 [Link to code](https://github.com/jdwilkin4/frontend-mentor-monorepo-challenges/tree/main/newsletter-signup)
+
+## QR Component
+
+[Live site](https://classy-druid-be5091.netlify.app/)
+[GitHub repo](https://github.com/jdwilkin4/frontend-mentor-monorepo-challenges/tree/main/qr-code-component-main)
