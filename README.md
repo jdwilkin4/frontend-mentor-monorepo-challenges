@@ -30,5 +30,5 @@ This is a monorepo that houses all of my Frontend Mentor solutions
 
 ## QR Component
 
-[Live site](https://classy-druid-be5091.netlify.app/)
+[Live site](https://classy-druid-be5091.netlify.app/)<br>
 [GitHub repo](https://github.com/jdwilkin4/frontend-mentor-monorepo-challenges/tree/main/qr-code-component-main)
