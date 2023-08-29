@@ -1,0 +1,17 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$white: #ffffff;
+$light-grey: #d6e2f0;
+$greyish-blue: #7b879d;
+$dark-blue: #1f3251;
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+}

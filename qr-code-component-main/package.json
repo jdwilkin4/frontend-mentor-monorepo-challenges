@@ -1,0 +1,23 @@
+{
+  "name": "qr-code-component-main",
+  "version": "1.0.0",
+  "description": "This is the solution for the QR code component for Frontend mentor",
+  "source": "index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "keywords": [
+    "HTML",
+    "SCSS"
+  ],
+  "author": "Jessica Wilkins",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.66.1"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.9.3",
+    "parcel": "^2.9.3"
+  }
+}
