@@ -15,7 +15,7 @@ $light-blue: #d5e1ef;
 body {
   font-family: "Outfit", sans-serif;
   font-style: normal;
-  font-size: 15px;
+  font-size: 0.938rem;
   background-color: $light-blue;
   display: flex;
   justify-content: center;
@@ -51,7 +51,6 @@ body {
     &__description {
       margin: auto;
       color: $greyish-blue;
-      font-size: 0.938rem;
       font-weight: 400;
       letter-spacing: 0.188px;
       width: 256px;
