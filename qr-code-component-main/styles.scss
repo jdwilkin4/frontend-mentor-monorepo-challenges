@@ -8,10 +8,49 @@
 
 $white: #ffffff;
 $light-grey: #d6e2f0;
-$greyish-blue: #7b879d;
-$dark-blue: #1f3251;
+$greyish-blue: #7d889e;
+$dark-blue: #1f314f;
+$light-blue: #d5e1ef;
 
 body {
   font-family: "Outfit", sans-serif;
+  font-style: normal;
   font-size: 15px;
+  background-color: $light-blue;
+  display: flex;
+  justify-content: center;
+
+  .card-component {
+    width: 320px;
+    border-radius: 20px;
+    background: $white;
+    margin-top: 5.313rem;
+    padding: 1rem;
+    padding-bottom: 2.5rem;
+    text-align: center;
+    box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.05);
+
+    &__qr-img {
+      width: 288px;
+      height: 288px;
+      border-radius: 10px;
+    }
+
+    &__title {
+      color: $dark-blue;
+      font-size: 1.375rem;
+      font-weight: 700;
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    &__description {
+      margin: auto;
+      color: $greyish-blue;
+      font-size: 0.938rem;
+      font-weight: 400;
+      letter-spacing: 0.188px;
+      width: 256px;
+    }
+  }
 }
