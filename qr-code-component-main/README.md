@@ -1,8 +1,8 @@
 # Frontend Mentor - QR code component solution<!-- omit in toc -->
 
-## Mobile<!-- omit in toc -->
+## Final result<!-- omit in toc -->
 
-## Desktop<!-- omit in toc -->
+![final result](./final-result.png)
 
 ## Table of contents<!-- omit in toc -->
 
@@ -25,6 +25,4 @@
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
