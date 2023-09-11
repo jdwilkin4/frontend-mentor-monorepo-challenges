@@ -32,3 +32,8 @@ This is a monorepo that houses all of my Frontend Mentor solutions
 
 [Live site](https://classy-druid-be5091.netlify.app/)<br>
 [GitHub repo](https://github.com/jdwilkin4/frontend-mentor-monorepo-challenges/tree/main/qr-code-component-main)
+
+## Ecommerce Product Page
+
+- [Live site URL](https://ecommerce-app-frontend-mentor.netlify.app/)<br>
+- [GitHub repo URL](https://github.com/jdwilkin4/frontend-mentor-monorepo-challenges/tree/main/ecommerce-project-page-main)
