@@ -1,20 +1,38 @@
-import React from "react";
+import "./MobileNav.scss";
 
 export function MobileNav() {
   return (
     <nav className="mobile-nav">
       <ul>
         <li>
-          <img src="./images/icon-menu.svg" alt="" />
+          <button className="btn" type="button">
+            <img src="./images/icon-menu.svg" alt="" />
+          </button>
         </li>
         <li>
-          <img src="./images/logo.svg" alt="" />
+          <img
+            className="mobile-nav__sneakers-logo"
+            src="./images/logo.svg"
+            alt="sneakers logo"
+          />
         </li>
         <li>
-          <img src="./images/icon-cart.svg" alt="" />
+          <button className="btn" type="button">
+            <img
+              className="mobile-nav__shopping-cart"
+              src="./images/icon-cart.svg"
+              alt="shopping cart"
+            />
+          </button>
         </li>
         <li>
-          <img src="./images/image-avatar.png" alt="" />
+          <button className="btn" type="button">
+            <img
+              className="mobile-nav__user-avatar"
+              src="./images/image-avatar.png"
+              alt="user avatar"
+            />
+          </button>
         </li>
       </ul>
     </nav>
