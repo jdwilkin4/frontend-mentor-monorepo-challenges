@@ -1,24 +1,36 @@
-export function SideNav() {
+import "./MobileSideNav.scss";
+
+type SideNavProps = {
+  handleShowSideNav: () => void;
+};
+
+export function SideNav({ handleShowSideNav }: SideNavProps) {
   return (
     <div className="side-nav">
-      <ul>
+      <ul className="side-nav__nav-items-container">
         <li>
-          <img src="./images/icon-close.svg" alt="" />
+          <button
+            className="close-btn"
+            onClick={handleShowSideNav}
+            type="button"
+          >
+            <img src="./images/icon-close.svg" alt="" />
+          </button>
         </li>
         <li>
-          <a href="">Collections</a>
+          <a href="#">Collections</a>
         </li>
         <li>
-          <a href="">Men</a>
+          <a href="#">Men</a>
         </li>
         <li>
-          <a href="">Women</a>
+          <a href="#">Women</a>
         </li>
         <li>
-          <a href="">About</a>
+          <a href="#">About</a>
         </li>
         <li>
-          <a href="">Contact</a>
+          <a href="#">Contact</a>
         </li>
       </ul>
     </div>

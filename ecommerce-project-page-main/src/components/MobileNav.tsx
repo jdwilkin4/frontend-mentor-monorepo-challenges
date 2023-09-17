@@ -1,40 +1,50 @@
+import React, { useState } from "react";
 import "./MobileNav.scss";
+import { SideNav } from "./MobileSideNav";
 
 export function MobileNav() {
+  const [showSideNav, setShowSideNav] = useState(false);
+  const handleShowSideNav = () => {
+    setShowSideNav(!showSideNav);
+  };
+
   return (
-    <nav className="mobile-nav">
-      <ul>
-        <li>
-          <button className="btn" type="button">
-            <img src="./images/icon-menu.svg" alt="" />
-          </button>
-        </li>
-        <li>
-          <img
-            className="mobile-nav__sneakers-logo"
-            src="./images/logo.svg"
-            alt="sneakers logo"
-          />
-        </li>
-        <li>
-          <button className="btn" type="button">
+    <>
+      {showSideNav && <SideNav handleShowSideNav={handleShowSideNav} />}
+      <nav className="mobile-nav">
+        <ul>
+          <li>
+            <button onClick={handleShowSideNav} className="btn" type="button">
+              <img src="./images/icon-menu.svg" alt="" />
+            </button>
+          </li>
+          <li>
             <img
-              className="mobile-nav__shopping-cart"
-              src="./images/icon-cart.svg"
-              alt="shopping cart"
+              className="mobile-nav__sneakers-logo"
+              src="./images/logo.svg"
+              alt="sneakers logo"
             />
-          </button>
-        </li>
-        <li>
-          <button className="btn" type="button">
-            <img
-              className="mobile-nav__user-avatar"
-              src="./images/image-avatar.png"
-              alt="user avatar"
-            />
-          </button>
-        </li>
-      </ul>
-    </nav>
+          </li>
+          <li>
+            <button className="btn" type="button">
+              <img
+                className="mobile-nav__shopping-cart"
+                src="./images/icon-cart.svg"
+                alt="shopping cart"
+              />
+            </button>
+          </li>
+          <li>
+            <button className="btn" type="button">
+              <img
+                className="mobile-nav__user-avatar"
+                src="./images/image-avatar.png"
+                alt="user avatar"
+              />
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </>
   );
 }
