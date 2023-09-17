@@ -4,19 +4,38 @@ import { Navbar } from "./components/Navbar";
 import { MobileCarousel } from "./components/MobileCarousel";
 import { LightBox } from "./components/LightBox";
 import { Product } from "./components/Product";
+import { CartModal } from "./components/CartModal";
 import useMediaQuery from "./hooks/useMediaQuery";
 
 function App() {
   const isMobile = useMediaQuery();
   const [productCount, setProductCount] = useState(0);
-  const handleUpdateProductCount = (productCount: number) => {
+  const [showCartModal, setShowCartModal] = useState(false);
+
+  const handleShowCartModal = () => {
+    setShowCartModal(!showCartModal);
+  };
+
+  const handleUpdateCart = () => {
     console.log(productCount);
   };
+
+  const handleIncrementProductCount = () => {
+    setProductCount((prev) => prev + 1);
+  };
+
+  const handleDecrementProductCount = () => {
+    if (productCount === 0) return;
+    setProductCount((prev) => prev - 1);
+  };
+
   return (
     <>
+      {showCartModal && <CartModal productCount={productCount} />}
+
       {isMobile ? (
         <>
-          <MobileNav />
+          <MobileNav handleShowCartModal={handleShowCartModal} />
           <MobileCarousel />
         </>
       ) : (
@@ -25,9 +44,12 @@ function App() {
           <LightBox />
         </>
       )}
+
       <Product
         productCount={productCount}
-        handleUpdateProductCount={handleUpdateProductCount}
+        handleDecrementProductCount={handleDecrementProductCount}
+        handleIncrementProductCount={handleIncrementProductCount}
+        handleUpdateCart={handleUpdateCart}
       />
     </>
   );

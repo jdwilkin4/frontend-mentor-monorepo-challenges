@@ -1,11 +1,15 @@
 type ProductProps = {
   productCount: number;
-  handleUpdateProductCount: (productCount: number) => void;
+  handleIncrementProductCount: () => void;
+  handleDecrementProductCount: () => void;
+  handleUpdateCart: () => void;
 };
 
 export function Product({
   productCount,
-  handleUpdateProductCount,
+  handleUpdateCart,
+  handleDecrementProductCount,
+  handleIncrementProductCount,
 }: ProductProps) {
   return (
     <div className="product-container">
@@ -27,18 +31,24 @@ export function Product({
       <p className="product-container__regular-price">$250.00</p>
       <div className="product-container__cart-container">
         <div className="product-container__cart-container__quantity-container">
-          <button className="product-container__cart-container__quantity-container__decrement-button">
+          <button
+            onClick={handleDecrementProductCount}
+            className="product-container__cart-container__quantity-container__decrement-button"
+          >
             -
           </button>
           <p className="product-container__cart-container__quantity-container__quantity">
             {productCount}
           </p>
-          <button className="product-container__cart-container__quantity-container__increment-button">
+          <button
+            onClick={handleIncrementProductCount}
+            className="product-container__cart-container__quantity-container__increment-button"
+          >
             +
           </button>
         </div>
         <button
-          onClick={() => handleUpdateProductCount(productCount)}
+          onClick={handleUpdateCart}
           className="product-container__cart-container__add-to-cart-button"
         >
           <img src="./images/icon-cart.svg" alt="" />

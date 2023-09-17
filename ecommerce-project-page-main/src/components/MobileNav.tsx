@@ -2,7 +2,11 @@ import React, { useState } from "react";
 import "./MobileNav.scss";
 import { SideNav } from "./MobileSideNav";
 
-export function MobileNav() {
+type MobileNavProps = {
+  handleShowCartModal: () => void;
+};
+
+export function MobileNav({ handleShowCartModal }: MobileNavProps) {
   const [showSideNav, setShowSideNav] = useState(false);
   const handleShowSideNav = () => {
     setShowSideNav(!showSideNav);
@@ -26,7 +30,7 @@ export function MobileNav() {
             />
           </li>
           <li>
-            <button className="btn" type="button">
+            <button onClick={handleShowCartModal} className="btn" type="button">
               <img
                 className="mobile-nav__shopping-cart"
                 src="./images/icon-cart.svg"
