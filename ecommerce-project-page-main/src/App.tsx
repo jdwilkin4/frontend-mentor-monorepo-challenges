@@ -29,13 +29,25 @@ function App() {
     setProductCount((prev) => prev - 1);
   };
 
+  const handleRemoveItemsFromCart = () => {
+    setProductCount(0);
+  };
+
   return (
     <>
-      {showCartModal && <CartModal productCount={productCount} />}
+      {showCartModal && (
+        <CartModal
+          handleRemoveItemsFromCart={handleRemoveItemsFromCart}
+          productCount={productCount}
+        />
+      )}
 
       {isMobile ? (
         <>
-          <MobileNav handleShowCartModal={handleShowCartModal} />
+          <MobileNav
+            productCount={productCount}
+            handleShowCartModal={handleShowCartModal}
+          />
           <MobileCarousel />
         </>
       ) : (

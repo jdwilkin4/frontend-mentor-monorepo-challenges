@@ -12,6 +12,11 @@
   margin-left: auto;
   margin-right: auto;
 
+  .btn {
+    cursor: pointer;
+    border: none;
+  }
+
   h2 {
     color: $veryDarkBlue;
     font-family: Kumbh Sans;
@@ -36,5 +41,62 @@
     line-height: 26px;
     padding-top: 4.813rem;
     padding-bottom: 5.313rem;
+  }
+
+  &__filled-cart {
+    padding-left: 1.5rem;
+    padding-top: 1.5rem;
+
+    &__product-description-container {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      &__product-img {
+        width: 50px;
+        height: 50px;
+        border-radius: 4px;
+      }
+
+      &__description-and-price {
+        &__description,
+        &__price {
+          color: $darkGrayishBlue;
+          font-family: Kumbh Sans;
+          font-size: 1rem;
+          font-weight: 400;
+          line-height: 26px;
+
+          &__sales-price {
+            color: $veryDarkBlue;
+            font-weight: 700;
+          }
+        }
+      }
+
+      &__delete-btn {
+        width: 14px;
+        height: 16px;
+        background: none;
+      }
+    }
+
+    &__checkout-btn {
+      background-color: $orange;
+      color: $white;
+      font-family: Kumbh Sans;
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: normal;
+      text-align: center;
+      padding: 1.375rem 7.5rem 1.125rem;
+      border-radius: 10px;
+      margin-top: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    &__checkout-btn:hover {
+      background-color: $lightOrange;
+    }
   }
 }

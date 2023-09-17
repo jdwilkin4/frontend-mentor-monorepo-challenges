@@ -4,6 +4,21 @@
   margin: 1.5rem;
   margin-bottom: 1.813rem;
 
+  &__product-count {
+    position: absolute;
+    top: 16px;
+    right: 64px;
+    background-color: $orange;
+    border-radius: 6.5px;
+    width: 19px;
+    color: $white;
+    font-family: Kumbh Sans;
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: center;
+  }
+
   .btn {
     background-color: transparent;
     border: none;
