@@ -13,21 +13,35 @@ function App() {
   const [productCount, setProductCount] = useState(0);
   const [showCartModal, setShowCartModal] = useState(false);
   const [currentThumbnailImg, setCurrentThumbnailImg] = useState(0);
+  const [isCartFull, setIsCartFull] = useState(false);
 
   const handleShowCartModal = () => setShowCartModal(!showCartModal);
 
   const handleUpdateCart = () => {
-    console.log(productCount);
+    if (productCount === 0) return;
+    setIsCartFull(true);
   };
 
   const handleIncrementProductCount = () => setProductCount((prev) => prev + 1);
 
   const handleDecrementProductCount = () => {
-    if (productCount === 0) return;
-    setProductCount((prev) => prev - 1);
+    setProductCount((prev) => {
+      if (prev === 1) {
+        setIsCartFull(false);
+        return 0;
+      }
+
+      return prev - 1;
+    });
   };
 
-  const handleRemoveItemsFromCart = () => setProductCount(0);
+  const handleRemoveItemsFromCart = () => {
+    setIsCartFull(false);
+    if (productCount > 0) {
+      setProductCount(0);
+      return;
+    }
+  };
 
   const handleShowNextThumbnailImg = () => {
     if (currentThumbnailImg === totalProductImages - 1) {
@@ -50,6 +64,7 @@ function App() {
     <>
       {showCartModal && (
         <CartModal
+          isCartFull={isCartFull}
           handleRemoveItemsFromCart={handleRemoveItemsFromCart}
           productCount={productCount}
         />
@@ -58,6 +73,7 @@ function App() {
       {isMobile ? (
         <>
           <MobileNav
+            isCartFull={isCartFull}
             productCount={productCount}
             handleShowCartModal={handleShowCartModal}
           />

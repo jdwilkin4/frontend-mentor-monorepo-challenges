@@ -2,18 +2,20 @@ import "./CartModal.scss";
 
 type CartModalProps = {
   productCount: number;
+  isCartFull: boolean;
   handleRemoveItemsFromCart: () => void;
 };
 
 export function CartModal({
   productCount,
+  isCartFull,
   handleRemoveItemsFromCart,
 }: CartModalProps) {
   return (
     <div className="cart-modal">
       <h2>Cart</h2>
       <hr />
-      {productCount === 0 ? (
+      {!isCartFull ? (
         <p className="cart-modal__empty-msg">Your cart is empty.</p>
       ) : (
         <div className="cart-modal__filled-cart">

@@ -5,11 +5,13 @@ import { SideNav } from "./MobileSideNav";
 type MobileNavProps = {
   handleShowCartModal: () => void;
   productCount: number;
+  isCartFull: boolean;
 };
 
 export function MobileNav({
   handleShowCartModal,
   productCount,
+  isCartFull,
 }: MobileNavProps) {
   const [showSideNav, setShowSideNav] = useState(false);
   const handleShowSideNav = () => {
@@ -34,7 +36,7 @@ export function MobileNav({
             />
           </li>
           <li>
-            {productCount > 0 && (
+            {isCartFull && (
               <span className="mobile-nav__product-count">{productCount}</span>
             )}
 
