@@ -1,0 +1,106 @@
+@import "../_colors.scss";
+
+.product-container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-family: Kumbh Sans;
+  font-weight: 700;
+  line-height: normal;
+
+  &__tagline {
+    margin-top: 1.5rem;
+    margin-bottom: 1.188rem;
+    text-transform: uppercase;
+    color: $orange;
+    font-size: 0.75rem;
+    letter-spacing: 1.846px;
+  }
+
+  &__product-name {
+    color: $veryDarkBlue;
+    font-size: 1.75rem;
+    line-height: 32px;
+  }
+
+  &__product-description {
+    color: $darkGrayishBlue;
+    font-size: 0.938rem;
+    font-weight: 400;
+    line-height: 25px;
+    margin-top: 0.938rem;
+    margin-bottom: 1.75rem;
+  }
+
+  &__price-container {
+    display: flex;
+    align-items: center;
+
+    &__sales-price {
+      color: $veryDarkBlue;
+      font-size: 1.75rem;
+    }
+
+    &__discount {
+      border-radius: 6px;
+      background-color: $paleOrange;
+      color: $orange;
+      font-size: 1rem;
+      padding: 7px 8px 4px 8px;
+      margin-left: 1rem;
+      margin-right: 5.625rem;
+    }
+
+    &__regular-price {
+      color: $grayishBlue;
+      font-size: 1rem;
+      line-height: 26px;
+      text-decoration: line-through;
+    }
+  }
+
+  &__cart-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: $lightGrayishBlue;
+    padding: 1.375rem 1.5rem 1.125rem;
+    margin-top: 1.688rem;
+    margin-bottom: 1rem;
+
+    &__update-count-btn {
+      background: transparent;
+      border: none;
+      color: $orange;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+
+    &__quantity {
+      color: $veryDarkBlue;
+      text-align: center;
+      font-size: 1rem;
+    }
+  }
+
+  &__add-to-cart-btn {
+    border: none;
+    background-color: $orange;
+    color: $white;
+    border-radius: 10px;
+    box-shadow: 0px 20px 50px -20px $orange;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.938rem;
+    padding-top: 1.375rem;
+    padding-bottom: 1.125rem;
+    cursor: pointer;
+
+    p {
+      color: $white;
+      font-size: 1rem;
+    }
+  }
+}
