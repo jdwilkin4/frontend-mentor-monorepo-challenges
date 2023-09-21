@@ -85,7 +85,11 @@ function App() {
         </>
       ) : (
         <>
-          <Navbar />
+          <Navbar
+            isCartFull={isCartFull}
+            productCount={productCount}
+            handleShowCartModal={handleShowCartModal}
+          />
           <LightBox />
         </>
       )}

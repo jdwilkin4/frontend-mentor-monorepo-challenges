@@ -13,6 +13,10 @@
   margin-left: auto;
   margin-right: auto;
 
+  @media (min-width: 48em) {
+    margin-right: 89px;
+  }
+
   .btn {
     cursor: pointer;
     border: none;
