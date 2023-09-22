@@ -6,6 +6,7 @@ import { LightBox } from "./components/LightBox";
 import { Product } from "./components/Product";
 import { CartModal } from "./components/CartModal";
 import useMediaQuery from "./hooks/useMediaQuery";
+import "./App.scss";
 
 function App() {
   const totalProductImages = 4;
@@ -82,6 +83,12 @@ function App() {
             currentImage={currentThumbnailImg}
             handleShowNextThumbnailImg={handleShowNextThumbnailImg}
           />
+          <Product
+            productCount={productCount}
+            handleDecrementProductCount={handleDecrementProductCount}
+            handleIncrementProductCount={handleIncrementProductCount}
+            handleUpdateCart={handleUpdateCart}
+          />
         </>
       ) : (
         <>
@@ -90,16 +97,19 @@ function App() {
             productCount={productCount}
             handleShowCartModal={handleShowCartModal}
           />
-          <LightBox />
+
+          <div className="product-information">
+            <LightBox />
+
+            <Product
+              productCount={productCount}
+              handleDecrementProductCount={handleDecrementProductCount}
+              handleIncrementProductCount={handleIncrementProductCount}
+              handleUpdateCart={handleUpdateCart}
+            />
+          </div>
         </>
       )}
-
-      <Product
-        productCount={productCount}
-        handleDecrementProductCount={handleDecrementProductCount}
-        handleIncrementProductCount={handleIncrementProductCount}
-        handleUpdateCart={handleUpdateCart}
-      />
     </>
   );
 }

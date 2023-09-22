@@ -1,0 +1,27 @@
+@import "../_colors.scss";
+
+.thumbnail-container {
+  display: flex;
+  gap: 31px;
+
+  &__btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    .img {
+      width: 88px;
+      height: 88px;
+      border-radius: 10px;
+    }
+
+    .img:hover {
+      opacity: 0.5;
+    }
+
+    &__current-thumbnail-img {
+      border: 2px solid $orange;
+      opacity: 0.5;
+    }
+  }
+}

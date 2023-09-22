@@ -1,0 +1,16 @@
+@import "../_colors.scss";
+
+.lightbox {
+  &__btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &__current-img {
+      width: 445px;
+      height: 445px;
+      border-radius: 15px;
+      margin-bottom: 2rem;
+    }
+  }
+}

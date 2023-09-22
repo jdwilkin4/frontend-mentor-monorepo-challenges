@@ -1,18 +1,28 @@
-export function ThumbnailImages() {
+import clsx from "clsx";
+import { LIST_OF_LIGHTBOX_LARGE_IMAGES } from "../constants";
+import "./ThumbnailImages.scss";
+
+type ThumbnailImagesProps = {
+  currentThumbnailImg: number;
+};
+
+export function ThumbnailImages({ currentThumbnailImg }: ThumbnailImagesProps) {
   return (
-    <div className="lightbox__thumbnail-imgs">
-      <button>
-        <img src="./images/image-product-1-thumbnail.jpg" alt="" />
-      </button>
-      <button>
-        <img src="./images/image-product-2-thumbnail.jpg" alt="" />
-      </button>
-      <button>
-        <img src="./images/image-product-3-thumbnail.jpg" alt="" />
-      </button>
-      <button>
-        <img src="./images/image-product-4-thumbnail.jpg" alt="" />
-      </button>
+    <div className="thumbnail-container">
+      {LIST_OF_LIGHTBOX_LARGE_IMAGES.map(({ src, id, alt }) => (
+        <button className="thumbnail-container__btn" key={src}>
+          <img
+            className={clsx(
+              id === currentThumbnailImg + 1
+                ? "thumbnail-container__btn__current-thumbnail-img"
+                : "thumbnail-container__btn__thumbnail-img",
+              "img"
+            )}
+            src={src}
+            alt={alt}
+          />
+        </button>
+      ))}
     </div>
   );
 }
