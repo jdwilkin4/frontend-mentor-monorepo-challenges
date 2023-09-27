@@ -15,7 +15,10 @@ export function LightBox() {
           alt={LIST_OF_LIGHTBOX_LARGE_IMAGES[currentImage].alt}
         />
       </button>
-      <ThumbnailImages currentThumbnailImg={currentImage} />
+      <ThumbnailImages
+        handleChangeCurrentImage={(index) => setCurrentImage(index)}
+        currentThumbnailImg={currentImage}
+      />
     </div>
   );
 }

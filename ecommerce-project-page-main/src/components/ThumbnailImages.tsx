@@ -4,13 +4,21 @@ import "./ThumbnailImages.scss";
 
 type ThumbnailImagesProps = {
   currentThumbnailImg: number;
+  handleChangeCurrentImage: (index: number) => void;
 };
 
-export function ThumbnailImages({ currentThumbnailImg }: ThumbnailImagesProps) {
+export function ThumbnailImages({
+  currentThumbnailImg,
+  handleChangeCurrentImage,
+}: ThumbnailImagesProps) {
   return (
     <div className="thumbnail-container">
       {LIST_OF_LIGHTBOX_LARGE_IMAGES.map(({ src, id, alt }) => (
-        <button className="thumbnail-container__btn" key={src}>
+        <button
+          onClick={() => handleChangeCurrentImage(id - 1)}
+          className="thumbnail-container__btn"
+          key={src}
+        >
           <img
             className={clsx(
               id === currentThumbnailImg + 1

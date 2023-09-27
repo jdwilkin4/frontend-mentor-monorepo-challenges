@@ -3,6 +3,7 @@ type LightboxImageType = {
   src: string;
   alt: string;
 };
+
 export const LIST_OF_LIGHTBOX_LARGE_IMAGES: LightboxImageType[] = [
   {
     id: 1,
