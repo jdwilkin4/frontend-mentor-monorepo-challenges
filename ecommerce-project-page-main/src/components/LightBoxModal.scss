@@ -1,0 +1,61 @@
+@import "../_colors.scss";
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 999;
+
+  &__close-btn {
+    position: absolute;
+    right: 36%;
+    top: 60px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &__current-img {
+    width: 445px;
+    height: 445px;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+  }
+
+  &__img-carousel {
+    position: relative;
+
+    &__next-btn {
+      right: -18px;
+    }
+
+    &__prev-btn {
+      left: -18px;
+    }
+  }
+}
+
+.modal-carousel-btn {
+  position: absolute;
+  top: 170px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: $white;
+  cursor: pointer;
+}

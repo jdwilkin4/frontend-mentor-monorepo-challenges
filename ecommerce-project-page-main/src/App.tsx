@@ -99,7 +99,12 @@ function App() {
           />
 
           <div className="product-information">
-            <LightBox />
+            <LightBox
+              currentThumbnailImg={currentThumbnailImg}
+              setCurrentThumbnailImg={setCurrentThumbnailImg}
+              handleShowNextThumbnailImg={handleShowNextThumbnailImg}
+              handleShowPreviousThumbnailImg={handleShowPreviousThumbnailImg}
+            />
 
             <Product
               productCount={productCount}
