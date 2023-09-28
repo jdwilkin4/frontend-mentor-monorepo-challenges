@@ -26,6 +26,8 @@ function App() {
   const handleIncrementProductCount = () => setProductCount((prev) => prev + 1);
 
   const handleDecrementProductCount = () => {
+    if (productCount === 0) return;
+
     setProductCount((prev) => {
       if (prev === 1) {
         setIsCartFull(false);
