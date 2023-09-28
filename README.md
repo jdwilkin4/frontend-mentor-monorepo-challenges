@@ -35,5 +35,10 @@ This is a monorepo that houses all of my Frontend Mentor solutions
 
 ## Ecommerce Product Page
 
-- [Live site URL](https://ecommerce-app-frontend-mentor.netlify.app/)<br>
-- [GitHub repo URL](https://github.com/jdwilkin4/frontend-mentor-monorepo-challenges/tree/main/ecommerce-project-page-main)
+[Live site URL](https://ecommerce-app-frontend-mentor.netlify.app/)<br>
+[GitHub repo URL](https://github.com/jdwilkin4/frontend-mentor-monorepo-challenges/tree/main/ecommerce-project-page-main)
+
+## Interactive Rating Component
+
+[Live site URL](https://rating-project-fm.netlify.app/)<br>
+[GitHub repo URL](https://github.com/jdwilkin4/frontend-mentor-monorepo-challenges/tree/main/interactive-rating-component)
