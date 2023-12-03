@@ -11,8 +11,62 @@
   border-radius: 30px;
 
   &__star-icon {
-    background-color: #262e38;
+    background-color: $darkBlue;
     border-radius: 50%;
     padding: 1rem;
+    margin-top: 2rem;
+  }
+
+  &__main-question {
+    color: $white;
+    font-weight: 700;
+    margin-top: 1.875rem;
+    margin-bottom: 0.438rem;
+  }
+
+  &__description {
+    color: $lightGrey;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 1.5rem;
+  }
+
+  &__ratings {
+    display: flex;
+    gap: 21px;
+
+    &__rating-btn {
+      border: none;
+      background-color: $darkBlue;
+      color: $mediumGrey;
+      font-weight: 700;
+      border-radius: 50%;
+      padding: 0.813rem 1.313rem;
+      cursor: pointer;
+    }
+
+    &__rating-btn:hover {
+      background-color: $orange;
+      color: $white;
+    }
+  }
+
+  &__submit-btn {
+    border: none;
+    border-radius: 22.5px;
+    background-color: $orange;
+    color: $white;
+    width: 90%;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 0.688rem 0;
+    text-transform: uppercase;
+    margin: 2.688rem 0 2rem;
+    cursor: pointer;
+  }
+
+  &__submit-btn:hover {
+    background-color: $white;
+    color: $orange;
   }
 }
