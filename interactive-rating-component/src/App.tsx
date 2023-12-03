@@ -16,7 +16,7 @@ function App() {
   };
 
   return (
-    <>
+    <main>
       {!isResultsScreenShowing ? (
         <RatingScreen
           selectedRating={selectedRating}
@@ -26,7 +26,7 @@ function App() {
       ) : (
         <ThankYouPage rating={selectedRating} />
       )}
-    </>
+    </main>
   );
 }
 
