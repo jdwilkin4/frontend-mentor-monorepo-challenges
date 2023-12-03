@@ -1,7 +1,18 @@
 import { RATINGS } from "../constants";
+import clsx from "clsx";
 import "./RatingScreen.scss";
 
-export function RatingScreen() {
+type RatingScreenProps = {
+  handleClick: (num: number) => void;
+  handleSetResultsScreen: () => void;
+  selectedRating: number;
+};
+
+export function RatingScreen({
+  handleClick,
+  handleSetResultsScreen,
+  selectedRating,
+}: RatingScreenProps) {
   return (
     <form className="rating-container">
       <img
@@ -17,7 +28,11 @@ export function RatingScreen() {
       <div className="rating-container__ratings">
         {RATINGS.map(({ id, rating }) => (
           <button
-            className="rating-container__ratings__rating-btn"
+            onClick={() => handleClick(rating)}
+            className={clsx(
+              "rating-container__ratings__rating-btn",
+              selectedRating === rating && "selected-rating"
+            )}
             key={id}
             type="button"
           >
@@ -25,7 +40,12 @@ export function RatingScreen() {
           </button>
         ))}
       </div>
-      <button className="rating-container__submit-btn">Submit</button>
+      <button
+        onClick={handleSetResultsScreen}
+        className="rating-container__submit-btn"
+      >
+        Submit
+      </button>
     </form>
   );
 }

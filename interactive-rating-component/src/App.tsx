@@ -1,13 +1,25 @@
-// import { useState } from "react";
+import { useState } from "react";
 import { ThankYouPage } from "./components/ThankYouPage";
-//import { RatingScreen } from "./components/RatingScreen";
+import { RatingScreen } from "./components/RatingScreen";
 
 function App() {
-  //const [rating, setRating] = useState(0);
+  const [selectedRating, setSelectedRating] = useState(0);
+  const [isResultsScreenShowing, setIsResultsScreenShowing] = useState(false);
+  const handleSetRating = (num: number) => setSelectedRating(() => num);
+
+  const handleSetResultsScreen = () => setIsResultsScreenShowing(true);
+
   return (
     <>
-      {/* <RatingScreen /> */}
-      <ThankYouPage rating={4} />
+      {!isResultsScreenShowing ? (
+        <RatingScreen
+          selectedRating={selectedRating}
+          handleSetResultsScreen={handleSetResultsScreen}
+          handleClick={handleSetRating}
+        />
+      ) : (
+        <ThankYouPage rating={selectedRating} />
+      )}
     </>
   );
 }
