@@ -1,13 +1,13 @@
 // import { useState } from "react";
-// import { ThankYouPage } from "./components/ThankYouPage";
-import { RatingScreen } from "./components/RatingScreen";
+import { ThankYouPage } from "./components/ThankYouPage";
+//import { RatingScreen } from "./components/RatingScreen";
 
 function App() {
   //const [rating, setRating] = useState(0);
   return (
     <>
-      <RatingScreen />
-      {/* <ThankYouPage rating={rating} /> */}
+      {/* <RatingScreen /> */}
+      <ThankYouPage rating={4} />
     </>
   );
 }

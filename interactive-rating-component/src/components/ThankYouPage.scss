@@ -1,1 +1,45 @@
 @import "../_colors.scss";
+
+.thank-you-container {
+  width: 412px;
+  border-radius: 30px;
+  background: var(
+    --black-gradient,
+    radial-gradient(98.96% 98.96% at 50% 0%, #232a34 0%, #181e27 100%)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__receipt-machine {
+    width: 162px;
+    height: 108px;
+    margin-top: 2.813rem;
+    margin-bottom: 2rem;
+  }
+
+  &__rating-result {
+    border-radius: 22.5px;
+    background: var(--Dark-Blue, $darkBlue);
+    color: $orange;
+    padding: 6px 20px;
+  }
+
+  &__heading {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: $white;
+    margin-top: 2.25rem;
+    margin-bottom: 0.438rem;
+  }
+
+  &__description {
+    font-size: 0.938rem;
+    color: $lightGrey;
+    width: 340px;
+    text-align: center;
+    line-height: 24px;
+    margin-bottom: 2.813rem;
+  }
+}

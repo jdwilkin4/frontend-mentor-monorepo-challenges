@@ -8,6 +8,7 @@ export function ThankYouPage({ rating }: ThankYouPageProps) {
   return (
     <div className="thank-you-container">
       <img
+        className="thank-you-container__receipt-machine"
         src="./images/illustration-thank-you.svg"
         alt="electronic receipt machine"
       />
