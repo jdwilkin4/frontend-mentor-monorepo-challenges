@@ -1,1 +1,14 @@
 @import "../_colors.scss";
+
+.rating-container {
+  background-color: $darkBlue;
+  width: 412px;
+  padding-left: 2rem;
+  border-radius: 30px;
+
+  &__star-icon {
+    background-color: $darkBlue;
+    border-radius: 50%;
+    padding: 1rem;
+  }
+}
