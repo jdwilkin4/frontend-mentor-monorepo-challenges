@@ -17,8 +17,8 @@ export function RatingScreen({
     <form className="rating-container">
       <img
         className="rating-container__star-icon"
-        src="/images/icon-star.svg"
-        alt=""
+        src="/icon-star.svg"
+        alt="star icon"
       />
       <h1 className="rating-container__main-question">How did we do?</h1>
       <p className="rating-container__description">
