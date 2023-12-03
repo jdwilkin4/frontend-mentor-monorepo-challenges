@@ -7,7 +7,13 @@ function App() {
   const [isResultsScreenShowing, setIsResultsScreenShowing] = useState(false);
   const handleSetRating = (num: number) => setSelectedRating(() => num);
 
-  const handleSetResultsScreen = () => setIsResultsScreenShowing(true);
+  const handleSetResultsScreen = () => {
+    if (selectedRating === 0) {
+      alert("Please select a rating");
+      return;
+    }
+    setIsResultsScreenShowing(true);
+  };
 
   return (
     <>
