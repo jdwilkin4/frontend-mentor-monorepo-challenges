@@ -16,7 +16,7 @@ function App() {
   };
 
   return (
-    <main>
+    <main role="main">
       {!isResultsScreenShowing ? (
         <RatingScreen
           selectedRating={selectedRating}
