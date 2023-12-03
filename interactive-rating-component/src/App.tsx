@@ -1,9 +1,9 @@
-import { useState } from "react";
+// import { useState } from "react";
+// import { ThankYouPage } from "./components/ThankYouPage";
 import { RatingScreen } from "./components/RatingScreen";
-import { ThankYouPage } from "./components/ThankYouPage";
 
 function App() {
-  const [rating, setRating] = useState(0);
+  //const [rating, setRating] = useState(0);
   return (
     <>
       <RatingScreen />

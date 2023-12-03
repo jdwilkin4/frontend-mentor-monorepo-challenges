@@ -1,13 +1,17 @@
 @import "../_colors.scss";
 
 .rating-container {
-  background-color: $darkBlue;
+  border-radius: 30px;
+  background: var(
+    --black-gradient,
+    radial-gradient(98.96% 98.96% at 50% 0%, #232a34 0%, #181e27 100%)
+  );
   width: 412px;
   padding-left: 2rem;
   border-radius: 30px;
 
   &__star-icon {
-    background-color: $darkBlue;
+    background-color: #262e38;
     border-radius: 50%;
     padding: 1rem;
   }
