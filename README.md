@@ -42,3 +42,8 @@ This is a monorepo that houses all of my Frontend Mentor solutions
 
 [Live site URL](https://rating-project-fm.netlify.app/)<br>
 [GitHub repo URL](https://github.com/jdwilkin4/frontend-mentor-monorepo-challenges/tree/main/interactive-rating-component)
+
+## Frontend Quiz App
+
+[Live site](https://frontend-quiz-app.netlify.app/)<br>
+[GitHub repo](https://github.com/jdwilkin4/frontend-mentor-monorepo-challenges/tree/main/frontend-quiz-app)
