@@ -10,7 +10,7 @@ import "./App.scss";
 
 function App() {
   const totalProductImages = 4;
-  const isMobile = useMediaQuery();
+  const isTablet = useMediaQuery();
   const [productCount, setProductCount] = useState(0);
   const [showCartModal, setShowCartModal] = useState(false);
   const [currentThumbnailImg, setCurrentThumbnailImg] = useState(0);
@@ -73,7 +73,7 @@ function App() {
         />
       )}
 
-      {isMobile ? (
+      {isTablet ? (
         <>
           <MobileNav
             isCartFull={isCartFull}

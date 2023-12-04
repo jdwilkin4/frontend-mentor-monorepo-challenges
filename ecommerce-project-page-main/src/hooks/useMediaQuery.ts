@@ -1,17 +1,17 @@
 import { useState } from "react";
 
 export default function useMediaQuery() {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isTablet, setIsTablet] = useState(false);
 
   const handleResize = () => {
-    if (window.innerWidth <= 375) {
-      setIsMobile(true);
+    if (window.innerWidth <= 1024) {
+      setIsTablet(true);
     } else {
-      setIsMobile(false);
+      setIsTablet(false);
     }
   };
 
   window.addEventListener("resize", handleResize);
 
-  return isMobile;
+  return isTablet;
 }
