@@ -14,7 +14,7 @@ export default function Navbar({
   return (
     <nav className="flex-container">
       <div className="icon-container flex-container">
-        {isStartScreenShowing && (
+        {!isStartScreenShowing && (
           <>
             <img src={quizIcon} alt={`${quizTitle} icon`} />
             <p>{quizTitle}</p>

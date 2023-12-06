@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Navbar from "./components/Navbar";
+import StartScreen from "./components/StartScreen";
 import { quizzes } from "./data.json";
 import "./App.css";
 
@@ -7,15 +8,16 @@ import "./App.css";
 const { icon, title } = quizzes[3];
 
 function App() {
-  const [isStartScreenShowing, setIsStartScreenShowing] = useState(false);
+  const [isStartScreenShowing, setIsStartScreenShowing] = useState(true);
   return (
-    <>
+    <main>
       <Navbar
         quizIcon={icon}
         quizTitle={title}
         isStartScreenShowing={isStartScreenShowing}
       />
-    </>
+      {isStartScreenShowing && <StartScreen />}
+    </main>
   );
 }
 

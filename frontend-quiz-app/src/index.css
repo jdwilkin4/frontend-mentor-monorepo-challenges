@@ -5,3 +5,27 @@
   margin: 0;
   padding: 0;
 }
+
+@font-face {
+  font-family: "Rubik";
+  src: url("./fonts/static/Rubik-Regular.ttf");
+}
+
+body {
+  background-image: url("../public/assets/images/pattern-background-mobile-light.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Rubik;
+}
+
+@media (min-width: 48em) {
+  body {
+    background-image: url("../public/assets/images/pattern-background-tablet-light.svg");
+  }
+}
+
+@media (min-width: 64em) {
+  body {
+    background-image: url("../public/assets/images/pattern-background-desktop-light.svg");
+  }
+}
