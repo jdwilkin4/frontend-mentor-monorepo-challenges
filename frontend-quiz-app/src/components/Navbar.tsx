@@ -3,12 +3,14 @@ import "./Navbar.scss";
 type NavbarProps = {
   quizTitle: string;
   quizIcon: string;
+  backgroundColor: string;
   isStartScreenShowing: boolean;
 };
 
 export default function Navbar({
   quizIcon,
   quizTitle,
+  backgroundColor,
   isStartScreenShowing,
 }: NavbarProps) {
   return (
@@ -16,7 +18,11 @@ export default function Navbar({
       <div className="icon-container flex-container">
         {!isStartScreenShowing && (
           <>
-            <img src={quizIcon} alt={`${quizTitle} icon`} />
+            <img
+              style={{ backgroundColor }}
+              src={quizIcon}
+              alt={`${quizTitle} icon`}
+            />
             <p>{quizTitle}</p>
           </>
         )}

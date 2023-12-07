@@ -7,6 +7,14 @@
 
 nav {
   justify-content: space-between;
+
+  .icon-container {
+    img {
+      padding: 5px;
+      border-radius: 12px;
+      margin-right: 1rem;
+    }
+  }
 }
 
 .theme-switch-wrapper {

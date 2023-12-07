@@ -5,13 +5,14 @@ import { quizzes } from "./data.json";
 import "./App.css";
 
 // testing default values
-const { icon, title } = quizzes[3];
+const { icon, title, backgroundColor } = quizzes[3];
 
 function App() {
   const [isStartScreenShowing, setIsStartScreenShowing] = useState(true);
   return (
     <main>
       <Navbar
+        backgroundColor={backgroundColor}
         quizIcon={icon}
         quizTitle={title}
         isStartScreenShowing={isStartScreenShowing}
