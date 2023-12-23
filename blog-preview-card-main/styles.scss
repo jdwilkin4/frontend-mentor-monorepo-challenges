@@ -50,7 +50,16 @@ body {
       font-weight: 500;
     }
 
-    &__title {
+    &__title-link {
+      text-decoration: none;
+      color: $black;
+    }
+
+    &__title-link:hover {
+      color: $yellow;
+    }
+
+    &__title-link h1 {
       font-size: 1.25rem;
       font-weight: 800;
       margin-top: 0.75rem;
@@ -77,6 +86,22 @@ body {
       &__author {
         font-size: 0.875rem;
         font-weight: 800;
+      }
+    }
+  }
+
+  @media (min-width: 90em) {
+    .card {
+      width: 384px;
+      box-shadow: 16px 16px 0px 0px $black;
+      font-size: 0.875rem;
+
+      &__title-link h1 {
+        font-size: 1.5rem;
+      }
+
+      &__description {
+        font-size: 1rem;
       }
     }
   }
