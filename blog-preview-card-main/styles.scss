@@ -3,6 +3,81 @@ $white: #ffffff;
 $grey: #808080;
 $black: #121212;
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Figtree", sans-serif;
+  font-style: normal;
+  background-color: $yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  line-height: 150%;
+
+  .card {
+    border-radius: 20px;
+    border: 1px solid $black;
+    background-color: $white;
+    box-shadow: 8px 8px 0px 0px $black;
+    width: 327px;
+    padding: 1.5rem;
+
+    &__main-illustration {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    &__tag {
+      background-color: $yellow;
+      width: fit-content;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 800;
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    &__date {
+      font-size: 0.75rem;
+      font-weight: 500;
+    }
+
+    &__title {
+      font-size: 1.25rem;
+      font-weight: 800;
+      margin-top: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    &__description {
+      color: $grey;
+      font-size: 0.875rem;
+      font-weight: 500;
+    }
+
+    &__author-container {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 1.5rem;
+
+      &__author-avatar {
+        width: 32px;
+        height: 32px;
+      }
+
+      &__author {
+        font-size: 0.875rem;
+        font-weight: 800;
+      }
+    }
+  }
 }
