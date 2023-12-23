@@ -47,3 +47,9 @@ This is a monorepo that houses all of my Frontend Mentor solutions
 
 [Live site](https://frontend-quiz-app.netlify.app/)<br>
 [GitHub repo](https://github.com/jdwilkin4/frontend-mentor-monorepo-challenges/tree/main/frontend-quiz-app)
+
+## Blog Preview Card
+
+[Live site](https://blog-preview-card-project.netlify.app/)
+<br>
+[GitHub repo](https://github.com/jdwilkin4/frontend-mentor-monorepo-challenges/tree/main/blog-preview-card-main)
