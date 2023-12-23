@@ -2,7 +2,6 @@
   "name": "blog-preview-card-main",
   "version": "1.0.0",
   "description": "This is a solution to the [Blog preview card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS). Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
-  "main": "index.js",
   "scripts": {
     "start": "parcel",
     "build": "parcel build"
