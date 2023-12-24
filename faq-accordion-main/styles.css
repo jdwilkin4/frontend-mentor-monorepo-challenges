@@ -1,0 +1,18 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #ffffff;
+  --light-pink: #f9f0ff;
+  --grayish-purple: #8c6991;
+  --dark-purple: #2f1533;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
