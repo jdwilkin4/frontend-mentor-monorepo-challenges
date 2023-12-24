@@ -2,8 +2,6 @@
 
 This is a solution to the [Advice generator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-Your challenge is to build out this advice generator app using the [Advice Slip API](https://api.adviceslip.com) and get it looking as close to the design as possible.
-
 ## Table of contents<!-- omit in toc -->
 
 - [Overview](#overview)
@@ -27,8 +25,9 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+[Live site](https://advice-generator-app-jw.netlify.app/)
+<br>
+[GitHub repo](https://github.com/jdwilkin4/frontend-mentor-monorepo-challenges/tree/main/advice-generator-app-main)
 
 ## My process
 

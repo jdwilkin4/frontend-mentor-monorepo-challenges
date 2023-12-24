@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="This is the advice generator app." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
@@ -23,9 +24,31 @@
     />
   </head>
   <body>
-    Advice #<!-- Advice ID goes here -->
-
-    "<!-- Advice text goes here -->"
+    <main>
+      <div class="card">
+        <p class="advice-txt">Advice #<span id="quote-id">117</span></p>
+        <blockquote cite="https://api.adviceslip.com/">
+          <p class="quote">
+            "It is easy to sit up and take notice, what's difficult is getting
+            up and taking action."
+          </p>
+        </blockquote>
+        <picture>
+          <source
+            srcset="./images/pattern-divider-desktop.svg"
+            media="(min-width:90em)"
+          />
+          <img
+            class="pattern-divider"
+            src="./images/pattern-divider-mobile.svg"
+            alt=""
+          />
+        </picture>
+      </div>
+      <button class="dice-icon">
+        <img src="./images/icon-dice.svg" alt="dice icon" />
+      </button>
+    </main>
     <script src="./index.js"></script>
   </body>
 </html>
