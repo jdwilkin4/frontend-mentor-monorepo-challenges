@@ -1,3 +1,7 @@
+const diceBtn = document.getElementById("dice-btn");
+const quoteId = document.getElementById("quote-id");
+const quote = document.getElementById("quote");
+
 async function fetchQuotes() {
   const res = await fetch("https://api.adviceslip.com/advice");
 
@@ -6,8 +10,10 @@ async function fetchQuotes() {
   }
 
   const data = await res.json();
-  const { id, advice } = data;
-  console.log(data);
+  const { id, advice } = data.slip;
+
+  quoteId.textContent = id;
+  quote.textContent = `"${advice}"`;
 }
 
-fetchQuotes();
+diceBtn.addEventListener("click", fetchQuotes);
