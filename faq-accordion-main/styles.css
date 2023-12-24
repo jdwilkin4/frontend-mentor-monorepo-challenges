@@ -11,6 +11,7 @@
   --light-pink: #f9f0ff;
   --grayish-purple: #8c6991;
   --dark-purple: #2f1533;
+  --purple: #ad28eb;
 }
 
 body {
@@ -19,6 +20,7 @@ body {
   background-color: var(--light-pink);
   background-image: url("./assets/images/background-pattern-mobile.svg");
   background-repeat: no-repeat;
+  background-size: contain;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,6 +39,7 @@ body {
 .main-heading-container,
 .question-and-icon-row {
   display: flex;
+  align-items: center;
 }
 
 .main-heading-container {
@@ -45,15 +48,19 @@ body {
 }
 
 .question-and-icon-row {
-  align-items: center;
   justify-content: space-between;
   gap: 24px;
 }
 
 .question {
   color: var(--dark-purple);
+  text-decoration: none;
   font-weight: 600;
   font-size: 1rem;
+}
+
+.question:hover {
+  color: var(--purple);
 }
 
 .answer {
@@ -98,5 +105,26 @@ hr {
   }
   .faq-card {
     width: 600px;
+  }
+
+  .purple-star {
+    width: 40px;
+    height: 40px;
+  }
+
+  .main-heading-container {
+    margin-bottom: 2rem;
+  }
+
+  .title {
+    font-size: 3.5rem;
+  }
+
+  .question {
+    font-size: 1.125rem;
+  }
+
+  .answer {
+    font-size: 1rem;
   }
 }

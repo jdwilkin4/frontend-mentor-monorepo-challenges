@@ -1,4 +1,5 @@
 const faqButtons = document.querySelectorAll(".btn");
+const questions = document.querySelectorAll(".question");
 
 let isAnswerShowing = false;
 
@@ -15,4 +16,8 @@ function toggleStyles(id) {
 
 faqButtons.forEach((button, index) => {
   button.addEventListener("click", () => toggleStyles(index + 1));
+});
+
+questions.forEach((question, index) => {
+  question.addEventListener("click", () => toggleStyles(index + 1));
 });
