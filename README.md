@@ -53,3 +53,9 @@ This is a monorepo that houses all of my Frontend Mentor solutions
 [Live site](https://blog-preview-card-project.netlify.app/)
 <br>
 [GitHub repo](https://github.com/jdwilkin4/frontend-mentor-monorepo-challenges/tree/main/blog-preview-card-main)
+
+## FAQ accordion Card
+
+[Live site](https://faq-accordion-project-jw.netlify.app/)
+<br>
+[GitHub repo](https://github.com/jdwilkin4/frontend-mentor-monorepo-challenges/tree/main/faq-accordion-main)
