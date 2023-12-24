@@ -71,6 +71,14 @@ body {
   cursor: pointer;
 }
 
+.toggle-icon {
+  content: url("./assets/images/icon-plus.svg");
+}
+
+.toggle-icon.icon-minus {
+  content: url("./assets/images/icon-minus.svg");
+}
+
 .hide {
   display: none;
 }
