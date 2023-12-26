@@ -26,15 +26,22 @@
   </head>
   <body>
     <header>
-      <img src="./images/logo.svg" alt="splitter logo" />
+      <img class="logo" src="./images/logo.svg" alt="splitter logo" />
     </header>
     <main class="card">
       <form action="" class="tip-form">
-        <label for="bill-total">Bill</label>
-        <input type="number" name="bill" id="bill-total" />
+        <label class="bill-total-label" for="bill-total">Bill</label>
+        <img class="icon dollar-icon" src="./images/icon-dollar.svg" alt="" />
+        <input
+          class="bill-total-input"
+          type="number"
+          name="bill"
+          id="bill-total"
+          autocomplete="off"
+        />
 
+        <p>Select Tip %</p>
         <div class="tip-btns">
-          <p>Select Tip %</p>
           <button class="tip-btn">5%</button>
           <button class="tip-btn">10%</button>
           <button class="tip-btn">15%</button>
@@ -44,29 +51,39 @@
             type="number"
             name="custom"
             id="custom-tip"
+            class="custom-tip-input"
             placeholder="Custom"
+            autocomplete="off"
           />
         </div>
 
-        <label for="number-of-people">Number of People</label>
-        <input type="number" name="people" id="number-of-people" />
+        <label class="number-people-label" for="number-of-people"
+          >Number of People</label
+        >
+        <img class="icon person-icon" src="./images/icon-person.svg" alt="" />
+        <input
+          autocomplete="off"
+          type="number"
+          name="people"
+          id="number-of-people"
+        />
       </form>
 
-      <div class="bill-results">
-        <div class="tip-amount-container">
+      <div class="bill-results-container">
+        <div class="tip-amount-container flex-row">
           <div class="tip-amount-text">
-            <p>Tip Amount</p>
-            <p>/ person</p>
+            <p class="bill-results-title">Tip Amount</p>
+            <p class="per-person-txt">/ person</p>
           </div>
-          <p class="tip-amount">$ <span id="tip-amount"></span></p>
+          <p class="tip-amount amount">$ <span id="tip-amount">0.00</span></p>
         </div>
 
-        <div class="total-amount-container">
+        <div class="total-amount-container flex-row">
           <div class="total-amount-text">
-            <p>Total</p>
-            <p>/ person</p>
+            <p class="bill-results-title">Total</p>
+            <p class="per-person-txt">/ person</p>
           </div>
-          <p class="total-amount">$ <span id="total"></span></p>
+          <p class="total-amount amount">$ <span id="total">0.00</span></p>
         </div>
 
         <button class="reset-btn" id="reset-btn" type="button">Reset</button>
