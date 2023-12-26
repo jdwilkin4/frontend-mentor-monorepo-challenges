@@ -64,7 +64,7 @@ function App() {
   };
 
   return (
-    <>
+    <main>
       {showCartModal && (
         <CartModal
           isCartFull={isCartFull}
@@ -117,7 +117,7 @@ function App() {
           </div>
         </>
       )}
-    </>
+    </main>
   );
 }
 
