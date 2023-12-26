@@ -22,7 +22,7 @@ export function CartModal({
           <div className="cart-modal__filled-cart__product-description-container">
             <img
               className="cart-modal__filled-cart__product-description-container__product-img"
-              src="./images/image-product-1-thumbnail.jpg"
+              src="../../images/image-product-1-thumbnail.jpg"
               alt=""
             />
             <div className="cart-modal__filled-cart__product-description-container__description-and-price">
