@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./MobileNav.scss";
 import { SideNav } from "./MobileSideNav";
 
