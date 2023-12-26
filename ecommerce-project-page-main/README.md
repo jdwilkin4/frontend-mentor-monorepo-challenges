@@ -17,7 +17,7 @@ This is a solution to the [E-commerce product page challenge on Frontend Mentor]
 
 ### Desktop
 
-![final ecommerce page screenshot](src/assets/final-screenshot.png)
+![final ecommerce page screenshot](./public/images/final-screenshot.png)
 
 ## Overview
 
