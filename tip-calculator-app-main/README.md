@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+[Live site](https://tip-calculator-frontend-mentor-jw.netlify.app/) <br>
+[GitHub repo](https://github.com/jdwilkin4/frontend-mentor-monorepo-challenges/tree/main/tip-calculator-app-main)
 
 ## My process
 
