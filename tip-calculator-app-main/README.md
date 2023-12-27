@@ -4,6 +4,8 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
 
 ## Screenshots<!-- omit in toc -->
 
+![final screenshot](images/final-screenshot.png)
+
 ## Table of contents<!-- omit in toc -->
 
 - [Overview](#overview)
@@ -36,3 +38,4 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- [Playwright](https://playwright.dev/)
