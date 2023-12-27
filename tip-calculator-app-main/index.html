@@ -36,6 +36,7 @@
           class="bill-total-input"
           type="number"
           name="bill"
+          step="0.01"
           id="bill-total"
           autocomplete="off"
           placeholder="0"
@@ -43,11 +44,11 @@
 
         <p>Select Tip %</p>
         <div class="tip-btns">
-          <button class="tip-btn">5%</button>
-          <button class="tip-btn">10%</button>
-          <button class="tip-btn">15%</button>
-          <button class="tip-btn">25%</button>
-          <button class="tip-btn">50%</button>
+          <button type="button" value=".5" class="tip-btn">5%</button>
+          <button type="button" value=".10" class="tip-btn">10%</button>
+          <button type="button" value=".15" class="tip-btn">15%</button>
+          <button type="button" value=".25" class="tip-btn">25%</button>
+          <button type="button" value=".50" class="tip-btn">50%</button>
           <input
             type="number"
             name="custom"
@@ -57,16 +58,19 @@
             autocomplete="off"
           />
         </div>
-
-        <label class="number-people-label" for="number-of-people"
-          >Number of People</label
-        >
+        <div class="num-of-people-row">
+          <label class="number-people-label" for="number-of-people"
+            >Number of People</label
+          >
+          <span class="error-msg">Can't be zero</span>
+        </div>
         <img class="icon person-icon" src="./images/icon-person.svg" alt="" />
         <input
           autocomplete="off"
           type="number"
           name="people"
           id="number-of-people"
+          class="num-of-people-input"
           placeholder="0"
         />
       </form>

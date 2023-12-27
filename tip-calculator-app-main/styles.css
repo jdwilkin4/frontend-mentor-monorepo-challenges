@@ -17,6 +17,7 @@
   --light-grayish-cyan: #c5e4e7;
   --very-light-grayish-cyan: #f3f9fa;
   --white: #ffffff;
+  --orange: #e17052;
 }
 
 body {
@@ -53,6 +54,7 @@ body {
 }
 
 .person-icon {
+  display: block;
   padding: 0.8rem;
 }
 
@@ -122,8 +124,23 @@ input[type="number"]:focus {
   width: 146px !important;
 }
 
+.num-of-people-row {
+  display: flex;
+  gap: 20px;
+}
+
 .number-people-label {
+  display: inline;
   margin-bottom: 0.375rem;
+}
+
+.num-of-people-input.error {
+  border: 2px solid var(--orange) !important;
+}
+
+.error-msg {
+  display: none;
+  color: var(--orange);
 }
 
 .bill-results-container {
@@ -190,6 +207,10 @@ input[type="number"]:focus {
     border-radius: 25px;
     box-shadow: 0px 32px 43px 0px rgba(79, 166, 175, 0.2);
     margin-bottom: 14.938rem;
+  }
+
+  .num-of-people-row {
+    gap: 94px;
   }
 
   .tip-form {
