@@ -9,11 +9,15 @@
   },
   "keywords": [
     "HTML",
-    "CSS"
+    "CSS",
+    "Playwright"
   ],
   "author": "Jessica Wilkins",
   "license": "ISC",
   "devDependencies": {
     "parcel": "^2.10.3"
+  },
+  "dependencies": {
+    "playwright": "^1.40.1"
   }
 }
