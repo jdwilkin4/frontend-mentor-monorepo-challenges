@@ -9,6 +9,7 @@
 :root {
   --strong-cyan: #26c0ab;
   --cyan: #26c2ae;
+  --dark-cyan: #0d686d;
   --very-dark-cyan: #00474b;
   --dark-grayish-cyan: #5e7a7d;
   --grayish-cyan: #7f9c9f;
@@ -171,13 +172,24 @@ input[type="number"]:focus {
   margin-top: 2.188rem;
 }
 
+.reset-btn:disabled {
+  background-color: var(--dark-cyan);
+  color: var(--very-dark-cyan);
+  cursor: not-allowed;
+}
+
 @media (min-width: 90em) {
+  .logo {
+    margin-top: 10.188rem;
+    margin-bottom: 5.438rem;
+  }
   .card {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 920px;
     border-radius: 25px;
     box-shadow: 0px 32px 43px 0px rgba(79, 166, 175, 0.2);
+    margin-bottom: 14.938rem;
   }
 
   .tip-form {
@@ -188,7 +200,22 @@ input[type="number"]:focus {
     width: 379px;
   }
 
+  .custom-tip-input {
+    width: 118px !important;
+    font-size: 1.2rem !important;
+  }
+
   .tip-btn {
     width: 117px;
+  }
+
+  .bill-results-container {
+    width: 413px;
+    padding: 2.5rem;
+    padding-top: 3.5rem;
+  }
+
+  .reset-btn {
+    margin-top: 8.375rem;
   }
 }
