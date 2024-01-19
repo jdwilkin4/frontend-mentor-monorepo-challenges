@@ -70,3 +70,8 @@ This is a monorepo that houses all of my Frontend Mentor solutions
 
 [Live site](https://tip-calculator-frontend-mentor-jw.netlify.app/) <br>
 [GitHub repo](https://github.com/jdwilkin4/frontend-mentor-monorepo-challenges/tree/main/tip-calculator-app-main)
+
+## Time dashboard app
+
+[Live site](https://time-tracking-app-jw.netlify.app/) <br>
+[GitHub repo](https://github.com/jdwilkin4/frontend-mentor-monorepo-challenges/tree/main/time-tracking-dashboard)
