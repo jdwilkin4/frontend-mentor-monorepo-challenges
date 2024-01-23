@@ -1,0 +1,85 @@
+/*Basic CSS reset*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --green: #c5f82a;
+  --white: #ffffff;
+  --grey: #333333;
+  --dark-grey: #1f1f1f;
+  --off-black: #141414;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  background-color: var(--off-black);
+  display: flex;
+  justify-content: center;
+  line-height: 150%;
+}
+
+.card {
+  margin: 7.25rem 1.5rem 0;
+  padding: 1.5rem;
+  padding-top: 0;
+  background-color: var(--dark-grey);
+  border-radius: 12px;
+  text-align: center;
+}
+
+@media (min-width: 90em) {
+  .card {
+    width: 384px;
+  }
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 88px;
+  height: 88px;
+  display: block;
+  margin: 1.5rem auto;
+}
+
+.profile-name {
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.profile-location {
+  font-weight: 700;
+  color: var(--green);
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.profile-quote {
+  font-size: 0.875rem;
+  color: var(--white);
+  margin-bottom: 1.5rem;
+}
+
+.profile-link {
+  display: block;
+  background-color: var(--grey);
+  color: var(--White, var(--White, #fff));
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin: 1rem 0;
+  text-decoration: none;
+  padding: 0.75rem 0;
+  border-radius: 8px;
+}
+
+.profile-link:hover {
+  background-color: var(--green);
+  color: var(--grey);
+}

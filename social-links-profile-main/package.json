@@ -1,0 +1,19 @@
+{
+  "name": "social-links-profile-main",
+  "version": "1.0.0",
+  "description": "This is a solution to the [Social links profile challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ). Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
+  "scripts": {
+    "start": "parcel --open",
+    "build": "parcel build"
+  },
+  "keywords": [
+    "HTML",
+    "CSS"
+  ],
+  "source": "index.html",
+  "author": "Jessica Wilkins",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.11.0"
+  }
+}
