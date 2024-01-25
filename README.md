@@ -75,3 +75,8 @@ This is a monorepo that houses all of my Frontend Mentor solutions
 
 [Live site](https://time-tracking-app-jw.netlify.app/) <br>
 [GitHub repo](https://github.com/jdwilkin4/frontend-mentor-monorepo-challenges/tree/main/time-tracking-dashboard)
+
+## Social Profile Links App
+
+[Live site](https://social-profile-links-frontendmentor.netlify.app/) <br>
+[GitHub repo](https://github.com/jdwilkin4/frontend-mentor-monorepo-challenges/tree/main/social-links-profile-main)
