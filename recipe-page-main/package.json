@@ -1,0 +1,19 @@
+{
+  "name": "recipe-page-main",
+  "author": "Jessica Wilkins",
+  "version": "1.0.0",
+  "description": "This is a solution to the [Recipe page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm). Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
+  "scripts": {
+    "start": "parcel --open",
+    "build": "parcel build"
+  },
+  "keywords": [
+    "HTML",
+    "CSS"
+  ],
+  "source": "index.html",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.11.0"
+  }
+}
