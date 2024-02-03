@@ -18,8 +18,8 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+[Live site](https://recipe-page-main-jw-copy.netlify.app/) <br>
+[GitHub repo](https://github.com/jdwilkin4/frontend-mentor-monorepo-challenges/tree/main/recipe-page-main)
 
 ## My process
 
