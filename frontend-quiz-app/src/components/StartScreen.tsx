@@ -5,13 +5,12 @@ export default function StartScreen() {
   return (
     <div className="start-screen-container">
       <div className="start-screen-container__text-container">
-        <h1 className="start-screen-container__text-container__welcome-text">
-          Welcome to the
+        <h1>
+          <span>Welcome to the</span>
+          <br />
+          <span>Frontend Quiz!</span>
         </h1>
-        <strong>Frontend Quiz!</strong>
-        <p className="start-screen-container__text-container__tagline">
-          Pick a subject to get started.
-        </p>
+        <p>Pick a subject to get started.</p>
       </div>
       <div className="start-screen-container__button-container">
         {quizzes.map(({ title, icon, backgroundColor }) => (

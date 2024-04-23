@@ -6,16 +6,11 @@
   padding: 0;
 }
 
-@font-face {
-  font-family: "Rubik";
-  src: url("./fonts/static/Rubik-Regular.ttf");
-}
-
 body {
   background-image: url("../public/assets/images/pattern-background-mobile-light.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: Rubik;
+  font-family: "Rubik", sans-serif;
 }
 
 @media (min-width: 48em) {

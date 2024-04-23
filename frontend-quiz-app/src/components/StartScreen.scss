@@ -10,19 +10,19 @@
     color: $darkGrey;
     text-align: left;
 
-    &__welcome-text {
+    h1 > span {
       font-size: 2.5rem;
       line-height: 100%;
       font-weight: 300;
     }
 
-    strong {
+    h1 > :last-child {
       font-size: 2.5rem;
       margin-top: 8px;
       font-weight: 500;
     }
 
-    &__tagline {
+    p {
       margin-top: 1rem;
       font-size: 14px;
       font-style: italic;
