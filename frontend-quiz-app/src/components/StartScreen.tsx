@@ -1,7 +1,11 @@
 import { quizzes } from "../data.json";
 import "./StartScreen.scss";
 
-export default function StartScreen() {
+type StartScreenProps = {
+  handleStartQuiz: (title: string) => void;
+};
+
+export default function StartScreen({ handleStartQuiz }: StartScreenProps) {
   return (
     <div className="start-screen-container">
       <div className="start-screen-container__text-container">
@@ -14,7 +18,11 @@ export default function StartScreen() {
       </div>
       <div className="start-screen-container__button-container">
         {quizzes.map(({ title, icon, backgroundColor }) => (
-          <button key={title} type="button">
+          <button
+            onClick={() => handleStartQuiz(title)}
+            key={title}
+            type="button"
+          >
             <img
               style={{ backgroundColor }}
               src={icon}
