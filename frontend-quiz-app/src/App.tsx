@@ -4,13 +4,8 @@ import StartScreen from "./components/StartScreen";
 import ResultsScreen from "./components/Results";
 import QuizTemplate from "./components/Quiz";
 import { quizzes } from "./data.json";
+import { QuizProps } from "./types";
 import "./App.css";
-
-type QuizProps = {
-  question: string;
-  options: string[];
-  answer: string;
-};
 
 function App() {
   const [isStartScreenShowing, setIsStartScreenShowing] = useState(true);
@@ -42,7 +37,7 @@ function App() {
       return <StartScreen handleStartQuiz={handleStartQuiz} />;
     } else {
       return isQuizShowing ? (
-        <QuizTemplate title={currentQuiz.title} />
+        <QuizTemplate currentQuiz={currentQuiz} />
       ) : (
         <ResultsScreen />
       );

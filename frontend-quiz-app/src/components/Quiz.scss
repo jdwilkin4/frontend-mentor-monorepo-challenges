@@ -1,1 +1,76 @@
 @import "../_colors";
+
+.question-container {
+  text-align: left;
+  margin-top: 3rem;
+
+  &__curr-question {
+    font-style: italic;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: $grey;
+  }
+
+  &__question {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-top: 0.75rem;
+    margin-bottom: 1.75rem;
+    color: $darkGrey;
+  }
+
+  &__btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin: 2.5rem 0 0.75rem;
+
+    button {
+      text-align: left;
+      padding: 1.5rem 0.75rem;
+      border-radius: 12px;
+      border: none;
+      box-shadow: 0px 16px 40px 0px rgba(143, 160, 193, 0.14);
+      background-color: $white;
+      font-size: 1.125rem;
+      cursor: pointer;
+
+      span:first-of-type {
+        border-radius: 6px;
+        background-color: $lightGrey;
+        padding: 0.688rem 0.875rem;
+        margin-right: 1rem;
+        font-weight: 500;
+        color: $grey;
+      }
+
+      span:nth-of-type(2) {
+        color: $darkGrey;
+        font-size: 0.9rem;
+      }
+    }
+
+    .selected-btn {
+      border: 3px solid $purple;
+      cursor: pointer;
+
+      span:first-of-type {
+        background-color: $purple;
+        color: $white;
+      }
+    }
+  }
+
+  &__submit-btn {
+    background-color: $purple;
+    color: $white;
+    padding: 0.75rem 0;
+    border: none;
+    border-radius: 12px;
+    font-weight: 500;
+    font-size: 1.125rem;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+  }
+}
